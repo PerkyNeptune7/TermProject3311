@@ -21,10 +21,5 @@ public class BookingSystem implements Observer{
             System.out.println("BookingSystem: Equipment stopped. Updating reservation status.");
         }
 
-        // Example logic: update reservations based on sensor activity
-        for (Reservation r : reservations) {
-            r.updateStatus(sensor.isEquipmentActive());
-        }
-
     }
 }

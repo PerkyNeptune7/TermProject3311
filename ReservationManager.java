@@ -21,13 +21,5 @@ public class ReservationManager implements Observer{
             System.out.println("ReservationManager: Equipment stopped. Ending reservation.");
         }
 
-        // Example logic: update reservation timing or status
-        for (Reservation r : reservations) {
-            if (sensor.isEquipmentActive()) {
-                r.startReservation();
-            } else {
-                r.endReservation();
-            }
-        }
     }
 }

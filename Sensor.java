@@ -31,8 +31,9 @@ public class Sensor implements Subject {
 
     @Override
     public void attach(Observer o) {
-        observers.add(o);
-
+        if (!observers.contains(o)) {
+            observers.add(o);
+        }
     }
 
     @Override
