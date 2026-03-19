@@ -1,5 +1,5 @@
-import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.Duration;
 
 public class LabSystemStatePatternDemo {
 
@@ -8,12 +8,15 @@ public class LabSystemStatePatternDemo {
        // =========================
        // Req6 demo: Equipment state
        // =========================
-       Equipment microscope = new Equipment("EQ-101", "Digital Microscope", "Lab A");
+       //EquipmentForStatePattern microscope = new EquipmentForStatePattern("EQ-101", "Digital Microscope", "Lab A");
+
+       DemoEquipment microscope = new DemoEquipment("EQ-101", "Digital Microscope", "Lab A");
+ 
 
 
        microscope.reserve();              // should work
-       microscope.disable();             // should fail because it's reserved
-       microscope.release();
+       microscope.disable();              // should fail because it's reserved
+       microscope.release();             // should work, back to available
        microscope.disable();             // now works
        microscope.reserve();             // should fail because disabled
        microscope.enable();              // back to available
@@ -28,7 +31,11 @@ public class LabSystemStatePatternDemo {
        // =========================
        // Req4 demo: Deposit state
        // =========================
-       Reservation reservation = new Reservation("RES-001", 10.0, LocalDateTime.now());
+
+       //ReservationforStatePattern reservation = new ReservationforStatePattern("RES-001", 10.0, LocalDateTime.now());
+
+       DemoReservation reservation = new DemoReservation("RES-001", 10.0, LocalDateTime.now());
+ 
 
 
        reservation.payDeposit();
@@ -39,7 +46,11 @@ public class LabSystemStatePatternDemo {
        System.out.println("\n-------------------------\n");
 
 
-       Reservation reservation2 = new Reservation("RES-002", 10.0, LocalDateTime.now());
+ 
+      // ReservationforStatePattern reservation2 = new ReservationforStatePattern("RES-002", 10.0, LocalDateTime.now());
+
+       DemoReservation reservation2 = new DemoReservation("RES-002", 10.0, LocalDateTime.now());
+ 
 
 
        reservation2.payDeposit();
@@ -49,6 +60,7 @@ public class LabSystemStatePatternDemo {
 }
 
 
+
 /* =========================================================
 * Req6 - Equipment State Pattern
 * =========================================================
@@ -56,24 +68,24 @@ public class LabSystemStatePatternDemo {
 
 
 interface EquipmentState {
-   void reserve(Equipment equipment);
-   void release(Equipment equipment);
-   void enable(Equipment equipment);
-   void disable(Equipment equipment);
-   void markMaintenance(Equipment equipment);
-   void finishMaintenance(Equipment equipment);
+   void reserve(DemoEquipment equipment);
+   void release(DemoEquipment equipment);
+   void enable(DemoEquipment equipment);
+   void disable(DemoEquipment equipment);
+   void markMaintenance(DemoEquipment equipment);
+   void finishMaintenance(DemoEquipment equipment);
    String getStateName();
 }
 
 
-class Equipment {
+class DemoEquipment {
    private String id;
    private String description;
    private String location;
    private EquipmentState state;
 
 
-   public Equipment(String id, String description, String location) {
+   public DemoEquipment(String id, String description, String location) {
        this.id = id;
        this.description = description;
        this.location = location;
@@ -137,38 +149,38 @@ class AvailableState implements EquipmentState {
 
 
    @Override
-   public void reserve(Equipment equipment) {
+   public void reserve(DemoEquipment equipment) {
        System.out.println("Equipment reserved successfully.");
        equipment.setState(new ReservedEquipmentState());
    }
 
 
    @Override
-   public void release(Equipment equipment) {
+   public void release(DemoEquipment equipment) {
        System.out.println("Equipment is already free.");
    }
 
 
    @Override
-   public void enable(Equipment equipment) {
+   public void enable(DemoEquipment equipment) {
        System.out.println("Equipment is already enabled.");
    }
 
 
    @Override
-   public void disable(Equipment equipment) {
+   public void disable(DemoEquipment equipment) {
        equipment.setState(new DisabledState());
    }
 
 
    @Override
-   public void markMaintenance(Equipment equipment) {
+   public void markMaintenance(DemoEquipment equipment) {
        equipment.setState(new MaintenanceState());
    }
 
 
    @Override
-   public void finishMaintenance(Equipment equipment) {
+   public void finishMaintenance(DemoEquipment equipment) {
        System.out.println("Equipment is not under maintenance.");
    }
 
@@ -184,38 +196,38 @@ class ReservedEquipmentState implements EquipmentState {
 
 
    @Override
-   public void reserve(Equipment equipment) {
+   public void reserve(DemoEquipment equipment) {
        System.out.println("Equipment is already reserved.");
    }
 
 
    @Override
-   public void release(Equipment equipment) {
+   public void release(DemoEquipment equipment) {
        System.out.println("Equipment reservation finished.");
        equipment.setState(new AvailableState());
    }
 
 
    @Override
-   public void enable(Equipment equipment) {
+   public void enable(DemoEquipment equipment) {
        System.out.println("Equipment is already enabled.");
    }
 
 
    @Override
-   public void disable(Equipment equipment) {
+   public void disable(DemoEquipment equipment) {
        System.out.println("Cannot disable equipment while it is reserved.");
    }
 
 
    @Override
-   public void markMaintenance(Equipment equipment) {
+   public void markMaintenance(DemoEquipment equipment) {
        System.out.println("Cannot move reserved equipment to maintenance.");
    }
 
 
    @Override
-   public void finishMaintenance(Equipment equipment) {
+   public void finishMaintenance(DemoEquipment equipment) {
        System.out.println("Equipment is not under maintenance.");
    }
 
@@ -231,37 +243,37 @@ class DisabledState implements EquipmentState {
 
 
    @Override
-   public void reserve(Equipment equipment) {
+   public void reserve(DemoEquipment equipment) {
        System.out.println("Cannot reserve equipment because it is disabled.");
    }
 
 
    @Override
-   public void release(Equipment equipment) {
+   public void release(DemoEquipment equipment) {
        System.out.println("Disabled equipment is not currently reserved.");
    }
 
 
    @Override
-   public void enable(Equipment equipment) {
+   public void enable(DemoEquipment equipment) {
        equipment.setState(new AvailableState());
    }
 
 
    @Override
-   public void disable(Equipment equipment) {
+   public void disable(DemoEquipment equipment) {
        System.out.println("Equipment is already disabled.");
    }
 
 
    @Override
-   public void markMaintenance(Equipment equipment) {
+   public void markMaintenance(DemoEquipment equipment) {
        System.out.println("Disabled equipment cannot be moved to maintenance unless enabled first.");
    }
 
 
    @Override
-   public void finishMaintenance(Equipment equipment) {
+   public void finishMaintenance(DemoEquipment equipment) {
        System.out.println("Equipment is not under maintenance.");
    }
 
@@ -277,37 +289,37 @@ class MaintenanceState implements EquipmentState {
 
 
    @Override
-   public void reserve(Equipment equipment) {
+   public void reserve(DemoEquipment equipment) {
        System.out.println("Cannot reserve equipment because it is under maintenance.");
    }
 
 
    @Override
-   public void release(Equipment equipment) {
+   public void release(DemoEquipment equipment) {
        System.out.println("Equipment under maintenance is not reserved.");
    }
 
 
    @Override
-   public void enable(Equipment equipment) {
+   public void enable(DemoEquipment equipment) {
        System.out.println("Finish maintenance first.");
    }
 
 
    @Override
-   public void disable(Equipment equipment) {
+   public void disable(DemoEquipment equipment) {
        equipment.setState(new DisabledState());
    }
 
 
    @Override
-   public void markMaintenance(Equipment equipment) {
+   public void markMaintenance(DemoEquipment equipment) {
        System.out.println("Equipment is already under maintenance.");
    }
 
 
    @Override
-   public void finishMaintenance(Equipment equipment) {
+   public void finishMaintenance(DemoEquipment equipment) {
        equipment.setState(new AvailableState());
    }
 
@@ -326,21 +338,21 @@ class MaintenanceState implements EquipmentState {
 
 
 interface DepositState {
-   void payDeposit(Reservation reservation);
-   void arrive(Reservation reservation, LocalDateTime arrivalTime);
-   double calculateFinalPayment(Reservation reservation, double totalCost);
+   void payDeposit(DemoReservation reservation);
+   void arrive(DemoReservation reservation, LocalDateTime arrivalTime);
+   double calculateFinalPayment(DemoReservation reservation, double totalCost);
    String getStateName();
 }
 
 
-class Reservation {
+class DemoReservation {
    private String reservationId;
    private double depositAmount;
    private LocalDateTime startTime;
    private DepositState depositState;
 
 
-   public Reservation(String reservationId, double depositAmount, LocalDateTime startTime) {
+   public DemoReservation(String reservationId, double depositAmount, LocalDateTime startTime) {
        this.reservationId = reservationId;
        this.depositAmount = depositAmount;
        this.startTime = startTime;
@@ -389,20 +401,20 @@ class DepositPendingState implements DepositState {
 
 
    @Override
-   public void payDeposit(Reservation reservation) {
+   public void payDeposit(DemoReservation reservation) {
        System.out.println("Deposit of $" + reservation.getDepositAmount() + " paid successfully.");
        reservation.setDepositState(new DepositPaidState());
    }
 
 
    @Override
-   public void arrive(Reservation reservation, LocalDateTime arrivalTime) {
+   public void arrive(DemoReservation reservation, LocalDateTime arrivalTime) {
        System.out.println("User cannot check in before paying deposit.");
    }
 
 
    @Override
-   public double calculateFinalPayment(Reservation reservation, double totalCost) {
+   public double calculateFinalPayment(DemoReservation reservation, double totalCost) {
        return totalCost;
    }
 
@@ -418,13 +430,13 @@ class DepositPaidState implements DepositState {
 
 
    @Override
-   public void payDeposit(Reservation reservation) {
+   public void payDeposit(DemoReservation reservation) {
        System.out.println("Deposit has already been paid.");
    }
 
 
    @Override
-   public void arrive(Reservation reservation, LocalDateTime arrivalTime) {
+   public void arrive(DemoReservation reservation, LocalDateTime arrivalTime) {
        long lateMinutes = Duration.between(reservation.getStartTime(), arrivalTime).toMinutes();
 
 
@@ -439,7 +451,7 @@ class DepositPaidState implements DepositState {
 
 
    @Override
-   public double calculateFinalPayment(Reservation reservation, double totalCost) {
+   public double calculateFinalPayment(DemoReservation reservation, double totalCost) {
        return totalCost;
    }
 
@@ -455,19 +467,19 @@ class DepositAppliedState implements DepositState {
 
 
    @Override
-   public void payDeposit(Reservation reservation) {
+   public void payDeposit(DemoReservation reservation) {
        System.out.println("Deposit has already been handled.");
    }
 
 
    @Override
-   public void arrive(Reservation reservation, LocalDateTime arrivalTime) {
+   public void arrive(DemoReservation reservation, LocalDateTime arrivalTime) {
        System.out.println("User has already checked in.");
    }
 
 
    @Override
-   public double calculateFinalPayment(Reservation reservation, double totalCost) {
+   public double calculateFinalPayment(DemoReservation reservation, double totalCost) {
        return totalCost - reservation.getDepositAmount();
    }
 
@@ -483,19 +495,19 @@ class DepositForfeitedState implements DepositState {
 
 
    @Override
-   public void payDeposit(Reservation reservation) {
+   public void payDeposit(DemoReservation reservation) {
        System.out.println("Deposit has already been forfeited.");
    }
 
 
    @Override
-   public void arrive(Reservation reservation, LocalDateTime arrivalTime) {
+   public void arrive(DemoReservation reservation, LocalDateTime arrivalTime) {
        System.out.println("Reservation already marked as late/no-show.");
    }
 
 
    @Override
-   public double calculateFinalPayment(Reservation reservation, double totalCost) {
+   public double calculateFinalPayment(DemoReservation reservation, double totalCost) {
        return totalCost;
    }
 
@@ -505,4 +517,5 @@ class DepositForfeitedState implements DepositState {
        return "DEPOSIT_FORFEITED";
    }
 }
+
 
