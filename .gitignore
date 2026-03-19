@@ -1,0 +1,11 @@
+# Ignore all compiled class files
+*.class
+
+target/
+build/
+
+.settings/
+.classpath
+.project
+.idea/
+*.iml
