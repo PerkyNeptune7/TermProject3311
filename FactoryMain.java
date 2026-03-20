@@ -31,6 +31,6 @@ System.out.println("--- Testing Factory Methods Isolated ---");
 
         Equipment arduino = equipmentFactory.createEquipment("Arduino", "Arduino Uno", "Microcontroller board for prototyping", "Lab B");
         System.out.println("Expected Type: Arduino");
-        System.out.println("Actual Type: " + arduino.getEquipmentType());
+        System.out.println("Actual Type: " + arduino.getEquipmentId());
     }
         
