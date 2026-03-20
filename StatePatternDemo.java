@@ -1,7 +1,6 @@
 import java.time.LocalDateTime;
 
-public class LabSystemStatePatternDemo {
-
+public class StatePatternDemo {
 
    public static void main(String[] args) {
        // =========================
@@ -57,5 +56,3 @@ public class LabSystemStatePatternDemo {
        System.out.println("Final amount due: $" + reservation2.calculateFinalPayment(30.0));
    }
 }
-
-
