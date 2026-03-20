@@ -4,9 +4,10 @@ public class Guest extends UserAccounts {
         this.needsapproval = false;
         this.isapproved = true;
     }
-@Override
-    public String getAccountType(){
+
+    @Override
+    public String getAccountType() {
         return "Guest";
-    }  
+    }
 
 }

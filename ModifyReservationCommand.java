@@ -6,7 +6,8 @@ public class ModifyReservationCommand implements Command {
     private LocalDateTime newStartTime;
     private LocalDateTime newEndTime;
 
-    public ModifyReservationCommand(Equipment equipment, Reservation reservation, LocalDateTime newStartTime, LocalDateTime newEndTime) {
+    public ModifyReservationCommand(Equipment equipment, Reservation reservation, LocalDateTime newStartTime,
+            LocalDateTime newEndTime) {
         this.equipment = equipment;
         this.reservation = reservation;
         this.newStartTime = newStartTime;
