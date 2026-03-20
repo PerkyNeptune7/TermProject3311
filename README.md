@@ -1,5 +1,5 @@
 
-# Running EquipmentState Pattern classes
+# Running State Pattern classes
 - `javac LabSystemStatePatternDemo.java`
 - `java LabSystemStatePatternDemo`
 
