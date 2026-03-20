@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UsageLogger implements Observer{
-    private List<String> logs;
+    private final List<String> logs;
 
     public UsageLogger() {
         logs = new ArrayList<>();
