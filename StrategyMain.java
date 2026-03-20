@@ -14,7 +14,7 @@ public class StrategyMain {
             System.out.println("Actual Faculty Rate:   $" + facultyStrategy.calculateRate() + "\n");
 
             // 3. Test Researcher Pricing
-            PricingStrategy researcherStrategy = new ResearcherPricing();
+            PricingStrategy researcherStrategy = new RearcherPricing();
             System.out.println("Expected Researcher Rate: $20.0");
             System.out.println("Actual Researcher Rate:   $" + researcherStrategy.calculateRate() + "\n");
 
