@@ -13,6 +13,10 @@ public class Sensor implements Subject {
         this.equipmentActive = false;
     }
 
+        public String getSensorId() {
+        return sensorId;
+    }
+
     // Detect when the equipment starts being used
     public void startEquipment(){
         equipmentActive = true;
@@ -50,3 +54,6 @@ public class Sensor implements Subject {
 
     }
 }
+
+
+

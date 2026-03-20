@@ -12,5 +12,5 @@ public UserAccounts(String username, String password) {
 
 }
 
-public String getAccountType();
+public abstract String getAccountType();
 }
