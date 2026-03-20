@@ -1,7 +1,7 @@
 
 # Running State Pattern classes
-- `javac LabSystemStatePatternDemo.java`
-- `java LabSystemStatePatternDemo`
+- `javac StatePatternDemo.java`
+- `java StatePatternDemo`
 
 # Running Strategy patterns classes
 - `javac StrategyMain.java`
