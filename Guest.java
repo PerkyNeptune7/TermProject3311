@@ -3,6 +3,7 @@ public class Guest extends UserAccounts {
         super(username, password);
         this.needsapproval = false;
         this.isapproved = true;
+        this.pricingStrategy = new GuestPricing();
     }
 
     @Override
