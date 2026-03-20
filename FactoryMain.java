@@ -33,4 +33,4 @@ System.out.println("--- Testing Factory Methods Isolated ---");
         System.out.println("Expected Type: Arduino");
         System.out.println("Actual Type: " + arduino.getEquipmentId());
     }
-        
+} 
