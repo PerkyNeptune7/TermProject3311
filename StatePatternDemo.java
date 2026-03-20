@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class LabSystemStatePatternDemo {
+public class StatePatternDemo {
 
 
    public static void main(String[] args) {
