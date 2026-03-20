@@ -12,7 +12,5 @@ public abstract class UserAccounts {
 
     }
 
-    public String getAccountType() {
-        return this.getClass().getSimpleName();
-    }
+public abstract String getAccountType();
 }

@@ -1,4 +1,6 @@
 public enum EquipmentStatus {
     AVAILABLE,
-    UNAVAILABLE
+    UNAVAILABLE,
+    DISABLED,
+    MAINTENANCE
 }
