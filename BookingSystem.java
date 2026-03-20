@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+
 public class BookingSystem implements Observer{
 
     private List<Reservation> reservations;
@@ -21,5 +22,9 @@ public class BookingSystem implements Observer{
             System.out.println("BookingSystem: Equipment stopped. Updating reservation status.");
         }
 
+    }
+
+    public List<Reservation> getReservations(){
+        return reservations;
     }
 }
