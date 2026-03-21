@@ -6,7 +6,6 @@ public class StatePatternDemo {
        // =========================
        // Req6 demo: Equipment state
        // =========================
-       //EquipmentForStatePattern microscope = new EquipmentForStatePattern("EQ-101", "Digital Microscope", "Lab A");
 
        EquipmentForStatePattern microscope = new EquipmentForStatePattern("EQ-101", "Digital Microscope", "Lab A");
  
@@ -29,8 +28,6 @@ public class StatePatternDemo {
        // =========================
        // Req4 demo: Deposit state
        // =========================
-
-       //ReservationforStatePattern reservation = new ReservationforStatePattern("RES-001", 10.0, LocalDateTime.now());
 
        ReservationforStatePattern reservation = new ReservationforStatePattern("RES-001", 10.0, LocalDateTime.now());
  

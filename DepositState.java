@@ -7,8 +7,8 @@ import java.time.LocalDateTime;
 */
 
 public interface DepositState {
-       void payDeposit(ReservationforStatePattern reservation);
-   void arrive(ReservationforStatePattern reservation, LocalDateTime arrivalTime);
-   double calculateFinalPayment(ReservationforStatePattern reservation, double totalCost);
-   String getStateName();
+    void payDeposit(ReservationforStatePattern reservation);
+    void arrive(ReservationforStatePattern reservation, LocalDateTime arrivalTime);
+    double calculateFinalPayment(ReservationforStatePattern reservation, double totalCost);
+    String getStateName();
 }

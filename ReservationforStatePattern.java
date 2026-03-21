@@ -1,10 +1,10 @@
 import java.time.LocalDateTime;
 
 public class ReservationforStatePattern {
-       private String reservationId;
-   private double depositAmount;
-   private LocalDateTime startTime;
-   private DepositState depositState;
+    private String reservationId;
+    private double depositAmount;
+    private LocalDateTime startTime;
+    private DepositState depositState;
 
 
    public ReservationforStatePattern(String reservationId, double depositAmount, LocalDateTime startTime) {
