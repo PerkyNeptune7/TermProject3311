@@ -39,7 +39,7 @@ public class RegistrationController {
             }
 
             // 3. Register the user in the database
-            database.registerNewUser(role, email, password);
+            database.registerNewUser(role, email, password, id);
 
             view.showMessage("Account successfully created! Pending Departmental Approval.", "Success", JOptionPane.INFORMATION_MESSAGE);
             view.dispose(); // Close registration window

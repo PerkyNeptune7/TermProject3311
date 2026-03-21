@@ -1,6 +1,6 @@
 public class Student extends UserAccounts {
-    public Student(String username, String password) {
-        super(username, password);
+    public Student(String username, String password, String registrationId) {
+        super(username, password, registrationId);
         this.pricingStrategy = new StudentPricing();
     }
 

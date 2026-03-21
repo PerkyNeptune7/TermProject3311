@@ -8,20 +8,24 @@ public class CoordinatorDashboardController {
     private HeadLabCoordinator coordinator;
     private LabDatabase database;
     private List<UserAccounts> pendingQueue; // Keep track of the queue list
+    private Runnable pendingUsersRefreshListener;
 
     public CoordinatorDashboardController(CoordinatorDashboardView view, HeadLabCoordinator coordinator, LabDatabase database) {
         this.view = view;
         this.coordinator = coordinator;
         this.database = database;
         this.pendingQueue = database.getPendingUsers();
+        this.pendingUsersRefreshListener = this::refreshPendingUsers;
 
         this.view.addGenerateListener(new GenerateAction());
         this.view.addApproveListener(new ApproveAction());
         this.view.addRejectListener(new RejectAction());
+        this.database.addPendingUsersListener(pendingUsersRefreshListener);
 
         this.view.addLogoutListener(e -> {
+            database.removePendingUsersListener(pendingUsersRefreshListener);
             view.dispose();
-            LoginView loginView = new LoginView();
+            LoginView loginView = new LoginView(true);
             new LoginController(loginView, database);
             loginView.setVisible(true);
         });
@@ -58,8 +62,7 @@ public class CoordinatorDashboardController {
                 approvedUser.isapproved = true;
                 approvedUser.needsapproval = false;
 
-                view.removePendingItem(index);
-                pendingQueue.remove(index);
+                database.notifyPendingUsersChanged();
                 view.showMessage("Account Approved: " + approvedUser.username, "Success", JOptionPane.INFORMATION_MESSAGE);
             } else {
                 view.showMessage("Select an account to approve.", "Warning", JOptionPane.WARNING_MESSAGE);
@@ -72,11 +75,15 @@ public class CoordinatorDashboardController {
         public void actionPerformed(ActionEvent e) {
             int index = view.getSelectedPendingIndex();
             if (index != -1) {
-                // In a real system, you would delete them from the database here
-                view.removePendingItem(index);
-                pendingQueue.remove(index);
+                UserAccounts rejectedUser = pendingQueue.get(index);
+                database.removeUser(rejectedUser);
                 view.showMessage("Account application rejected.", "Rejected", JOptionPane.INFORMATION_MESSAGE);
             }
         }
+    }
+
+    private void refreshPendingUsers() {
+        pendingQueue = database.getPendingUsers();
+        view.refreshPendingUsers(pendingQueue);
     }
 }

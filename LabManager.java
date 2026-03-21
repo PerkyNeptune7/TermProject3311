@@ -2,8 +2,8 @@ public class LabManager extends UserAccounts {
 
     // Notice we use default modifier (package-private) or protected for the constructor
     // This makes it harder for random classes to create a LabManager directly!
-    protected LabManager(String username, String password) {
-        super(username, password);
+    protected LabManager(String username, String password, String registrationId) {
+        super(username, password, registrationId);
         this.needsapproval = false; // Managers are pre-approved
         this.isapproved = true;
 

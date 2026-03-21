@@ -4,19 +4,23 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 public class LoginView extends JFrame {
-    private JTextField usernameField; // Added Username Field
     private JTextField emailField;
     private JPasswordField passwordField;
     private JButton loginButton;
     private JButton signUpButton;
+    private boolean backendPortal;
 
-    public LoginView() {
+    public LoginView(boolean backendPortal) {
+        this.backendPortal = backendPortal;
+
         // Force Java to use your computer's native UI look!
         try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
         catch (Exception e) {}
 
-        setTitle("York University - Lab Equipment System");
-        setSize(450, 350); // Increased height to fit 3 fields comfortably
+        setTitle(backendPortal
+                ? "York University - Backend Portal"
+                : "York University - Lab Equipment System");
+        setSize(450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Centers the window
         setLayout(new BorderLayout());
@@ -24,7 +28,7 @@ public class LoginView extends JFrame {
         // --- Header ---
         JPanel headerPanel = new JPanel();
         headerPanel.setBorder(new EmptyBorder(20, 10, 10, 10));
-        JLabel titleLabel = new JLabel("Lab Equipment Portal");
+        JLabel titleLabel = new JLabel(backendPortal ? "Backend Staff Portal" : "Lab Equipment Portal");
         titleLabel.setFont(new Font("Segoe UI", Font.BOLD, 22));
         titleLabel.setForeground(new Color(227, 24, 55)); // YorkU Red
         headerPanel.add(titleLabel);
@@ -37,27 +41,19 @@ public class LoginView extends JFrame {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.insets = new Insets(10, 10, 10, 10); // Spacing between rows
 
-        // Row 1: Username
+        // Row 1: Email
         gbc.gridx = 0; gbc.gridy = 0; gbc.weightx = 0.3;
-        formPanel.add(new JLabel("Username:"), gbc);
-
-        gbc.gridx = 1; gbc.gridy = 0; gbc.weightx = 0.7;
-        usernameField = new JTextField();
-        formPanel.add(usernameField, gbc);
-
-        // Row 2: Email
-        gbc.gridx = 0; gbc.gridy = 1; gbc.weightx = 0.3;
         formPanel.add(new JLabel("Email Address:"), gbc);
 
-        gbc.gridx = 1; gbc.gridy = 1; gbc.weightx = 0.7;
+        gbc.gridx = 1; gbc.gridy = 0; gbc.weightx = 0.7;
         emailField = new JTextField();
         formPanel.add(emailField, gbc);
 
-        // Row 3: Password
-        gbc.gridx = 0; gbc.gridy = 2; gbc.weightx = 0.3;
+        // Row 2: Password
+        gbc.gridx = 0; gbc.gridy = 1; gbc.weightx = 0.3;
         formPanel.add(new JLabel("Password:"), gbc);
 
-        gbc.gridx = 1; gbc.gridy = 2; gbc.weightx = 0.7;
+        gbc.gridx = 1; gbc.gridy = 1; gbc.weightx = 0.7;
         passwordField = new JPasswordField();
         formPanel.add(passwordField, gbc);
 
@@ -72,16 +68,20 @@ public class LoginView extends JFrame {
 
         signUpButton = new JButton("Create Account");
         signUpButton.setPreferredSize(new Dimension(140, 35));
+        signUpButton.setEnabled(!backendPortal);
+        signUpButton.setVisible(!backendPortal);
 
         buttonPanel.add(loginButton);
-        buttonPanel.add(signUpButton);
+        if (!backendPortal) {
+            buttonPanel.add(signUpButton);
+        }
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
     // Getters for the Controller
-    public String getUsername() { return usernameField.getText(); }
     public String getEmail() { return emailField.getText(); }
     public String getPassword() { return new String(passwordField.getPassword()); }
+    public boolean isBackendPortal() { return backendPortal; }
 
     // Listeners
     public void addLoginListener(ActionListener listener) { loginButton.addActionListener(listener); }

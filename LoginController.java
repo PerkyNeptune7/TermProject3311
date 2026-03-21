@@ -24,22 +24,32 @@ public class LoginController {
         @Override
         public void actionPerformed(ActionEvent e) {
             // Grab all fields
-            String username = view.getUsername();
             String email = view.getEmail();
             String password = view.getPassword();
 
-            // Smart check: Use whichever field they actually filled out!
-            String loginID = username.isEmpty() ? email : username;
-
-            if (loginID.isEmpty() || password.isEmpty()) {
+            if (email.isEmpty() || password.isEmpty()) {
                 view.showMessage("Please enter your login details.", "Error", JOptionPane.ERROR_MESSAGE);
                 return;
             }
 
             // Attempt Authentication
-            UserAccounts loggedInUser = database.authenticate(loginID, password);
+            UserAccounts loggedInUser = database.authenticate(email, password);
 
             if (loggedInUser != null) {
+                boolean isBackendUser =
+                        loggedInUser.getAccountType().equals("Head Lab Coordinator") ||
+                        loggedInUser.getAccountType().equals("Lab Manager");
+
+                if (view.isBackendPortal() && !isBackendUser) {
+                    view.showMessage("This login window is for backend users only.", "Access Denied", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+
+                if (!view.isBackendPortal() && isBackendUser) {
+                    view.showMessage("Please use the backend login window for coordinator and manager accounts.", "Access Denied", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+
                 // --- REQ 1: Check Departmental Approval ---
                 if (loggedInUser.needsapproval && !loggedInUser.isapproved) {
                     view.showMessage("Your account is pending departmental approval. Please contact the Head Coordinator.", "Access Denied", JOptionPane.WARNING_MESSAGE);
@@ -61,7 +71,7 @@ public class LoginController {
 
                 } else {
                     DashboardView dashboardView = new DashboardView(loggedInUser, database.getAvailableEquipment());
-                    new DashboardController(dashboardView, database.getAvailableEquipment(), loggedInUser);
+                    new DashboardController(dashboardView, database.getAvailableEquipment(), loggedInUser, database);
                     dashboardView.setVisible(true);
                 }
             } else {

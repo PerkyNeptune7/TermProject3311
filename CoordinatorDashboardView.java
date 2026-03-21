@@ -22,7 +22,7 @@ public class CoordinatorDashboardView extends JFrame {
         try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); } catch (Exception e) {}
 
         setTitle("Head Coordinator Panel - " + username);
-        setSize(500, 350);
+        setSize(620, 380);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
@@ -35,11 +35,15 @@ public class CoordinatorDashboardView extends JFrame {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL; gbc.insets = new Insets(10, 10, 10, 10);
 
-        gbc.gridx = 0; gbc.gridy = 0; generatePanel.add(new JLabel("Manager Email:"), gbc);
-        gbc.gridx = 1; emailField = new JTextField(); generatePanel.add(emailField, gbc);
+        gbc.gridx = 0; gbc.gridy = 0; gbc.weightx = 0.2; generatePanel.add(new JLabel("Manager Email:"), gbc);
+        gbc.gridx = 1; gbc.weightx = 0.8; emailField = new JTextField(24);
+        emailField.setPreferredSize(new Dimension(260, 34));
+        generatePanel.add(emailField, gbc);
 
-        gbc.gridx = 0; gbc.gridy = 1; generatePanel.add(new JLabel("Temp Password:"), gbc);
-        gbc.gridx = 1; passwordField = new JPasswordField(); generatePanel.add(passwordField, gbc);
+        gbc.gridx = 0; gbc.gridy = 1; gbc.weightx = 0.2; generatePanel.add(new JLabel("Temp Password:"), gbc);
+        gbc.gridx = 1; gbc.weightx = 0.8; passwordField = new JPasswordField(24);
+        passwordField.setPreferredSize(new Dimension(260, 34));
+        generatePanel.add(passwordField, gbc);
 
         generateButton = new JButton("Generate Lab Manager");
         gbc.gridx = 0; gbc.gridy = 2; gbc.gridwidth = 2; generatePanel.add(generateButton, gbc);
@@ -83,6 +87,12 @@ public class CoordinatorDashboardView extends JFrame {
     // UI Updaters
     public void clearFields() { emailField.setText(""); passwordField.setText(""); }
     public void removePendingItem(int index) { pendingModel.remove(index); }
+    public void refreshPendingUsers(List<UserAccounts> pendingUsers) {
+        pendingModel.clear();
+        for (UserAccounts u : pendingUsers) {
+            pendingModel.addElement(u.username + " (" + u.getAccountType() + ")");
+        }
+    }
     public void showMessage(String msg, String title, int type) { JOptionPane.showMessageDialog(this, msg, title, type); }
 
     // Listeners

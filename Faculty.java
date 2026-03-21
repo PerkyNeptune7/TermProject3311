@@ -1,6 +1,6 @@
 public class Faculty extends UserAccounts {
-    public Faculty(String username, String password) {
-        super(username, password);
+    public Faculty(String username, String password, String registrationId) {
+        super(username, password, registrationId);
         this.pricingStrategy = new FacultyPricing();
     }
 

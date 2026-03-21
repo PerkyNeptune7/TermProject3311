@@ -1,25 +1,29 @@
 public abstract class UserAccounts {
     public String username;
     public String password;
+    private String registrationId;
     public boolean needsapproval;
     public boolean isapproved;
-    // 1. Add this protected variable so subclasses can see it
     protected PricingStrategy pricingStrategy;
 
-    public UserAccounts(String username, String password) {
+    public UserAccounts(String username, String password, String registrationId) {
         this.username = username;
         this.password = password;
+        this.registrationId = registrationId;
         this.needsapproval = true;
         this.isapproved = false;
-
     }
-    // 2. Add the method the GUI is looking for!
+
     public double getHourlyRate() {
         if (pricingStrategy != null) {
             return pricingStrategy.calculateRate();
         }
-        return 0.0; // Fallback
+        return 0.0;
     }
 
-public abstract String getAccountType();
+    public String getRegistrationId() {
+        return registrationId;
+    }
+
+    public abstract String getAccountType();
 }
