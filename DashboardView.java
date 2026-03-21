@@ -44,6 +44,7 @@ public class DashboardView extends JFrame {
         reservationModel = new DefaultListModel<>();
         // For testing, let's add a fake existing reservation so you have something to click!
         reservationModel.addElement("RES-999 | Electron Microscope | 2:00 PM - 3:00 PM");
+        reservationModel.addElement("RES-888 | 3D Printer | 3:00 PM - 4:00 PM (NEXT SLOT FULL)");
 
         reservationListUI = new JList<>(reservationModel);
         bottomPanel.add(new JScrollPane(reservationListUI), BorderLayout.CENTER);
@@ -72,7 +73,7 @@ public class DashboardView extends JFrame {
         reservationModel.remove(index);
     }
 
-    public void showMessage(String msg) {
+    public void showMessage(String msg, String modificationComplete, int informationMessage) {
         JOptionPane.showMessageDialog(this, msg);
     }
 }

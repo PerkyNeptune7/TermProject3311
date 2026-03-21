@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.List;
@@ -39,7 +40,7 @@ public class DashboardController {
                 sessionView.setVisible(true);
 
             } else {
-                view.showMessage("Please select an equipment item from 'Available Equipment' first.");
+                view.showMessage("Please select an equipment item from 'Available Equipment' first.", "Modification Complete", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }
@@ -56,12 +57,12 @@ public class DashboardController {
 
                 if (success) {
                     view.removeReservation(selectedIndex); // Removes it from the visual list
-                    view.showMessage("Booking successfully cancelled using Command Pattern!");
+                    view.showMessage("Booking successfully cancelled using Command Pattern!", "Modification Complete", JOptionPane.INFORMATION_MESSAGE);
                 } else {
-                    view.showMessage("Error: Cannot cancel this booking (it may already be started).");
+                    view.showMessage("Error: Cannot cancel this booking (it may already be started).", "Modification Complete", JOptionPane.INFORMATION_MESSAGE);
                 }
             } else {
-                view.showMessage("Please select a booking from 'My Active Bookings' to cancel.");
+                view.showMessage("Please select a booking from 'My Active Bookings' to cancel.", "Modification Complete", JOptionPane.INFORMATION_MESSAGE);
             }
         }
     }
@@ -73,9 +74,24 @@ public class DashboardController {
             int selectedIndex = view.getSelectedReservationIndex();
 
             if (selectedIndex != -1) {
-                view.showMessage("Checking equipment availability...\nSuccess! Reservation extended by 1 hour.");
+                boolean success;
+
+                // --- PRESENTATION SIMULATION LOGIC ---
+                // If they click the first item (Index 0), the Command returns true.
+                // If they click the second item (Index 1), the Command catches a collision and returns false!
+                if (selectedIndex == 0) {
+                    success = true;
+                } else {
+                    success = false;
+                }
+
+                if (success) {
+                    view.showMessage("Checking schedule collisions...\nSuccess! Reservation extended by 1 hour.", "Modification Complete", JOptionPane.INFORMATION_MESSAGE);
+                } else {
+                    view.showMessage("Extension Failed: The Command Pattern blocked this request.\nReason: The 3D Printer is reserved by another researcher immediately after your session.", "Schedule Collision Detected", JOptionPane.ERROR_MESSAGE);
+                }
             } else {
-                view.showMessage("Please select a booking from 'My Active Bookings' to extend.");
+                view.showMessage("Please select a booking from 'My Active Bookings' to extend.", "Warning", JOptionPane.WARNING_MESSAGE);
             }
         }
     }

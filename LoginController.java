@@ -1,4 +1,4 @@
-import java.awt.Color;
+import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -10,37 +10,62 @@ public class LoginController {
         this.view = view;
         this.database = database;
 
-        // Tell the view to trigger our internal LoginAction when the button is clicked
         this.view.addLoginListener(new LoginAction());
 
+        // Opens the Registration Window
         this.view.addSignUpListener(e -> {
             RegistrationView regView = new RegistrationView();
-            RegistrationController regController = new RegistrationController(regView, database);
+            new RegistrationController(regView, database);
             regView.setVisible(true);
         });
     }
 
-
     class LoginAction implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            // Grab all fields
             String username = view.getUsername();
+            String email = view.getEmail();
             String password = view.getPassword();
 
-            // Ask the database to verify the user
-            UserAccounts loggedInUser = database.authenticate(username, password);
+            // Smart check: Use whichever field they actually filled out!
+            String loginID = username.isEmpty() ? email : username;
+
+            if (loginID.isEmpty() || password.isEmpty()) {
+                view.showMessage("Please enter your login details.", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
+            // Attempt Authentication
+            UserAccounts loggedInUser = database.authenticate(loginID, password);
 
             if (loggedInUser != null) {
-                view.showMessage("Success!", new Color(0, 150, 0));
+                // --- REQ 1: Check Departmental Approval ---
+                if (loggedInUser.needsapproval && !loggedInUser.isapproved) {
+                    view.showMessage("Your account is pending departmental approval. Please contact the Head Coordinator.", "Access Denied", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
 
-                // Hide the Login Window
-                view.setVisible(false);
+                view.dispose(); // Close login window on success
 
-                // Launch the Dashboard Window
-                DashboardView dashboardView = new DashboardView(loggedInUser, database.getAvailableEquipment());
-                DashboardController dashController = new DashboardController(dashboardView, database.getAvailableEquipment(), loggedInUser);
-                dashboardView.setVisible(true);
+                // --- ROUTING LOGIC ---
+                if (loggedInUser.getAccountType().equals("Head Lab Coordinator")) {
+                    CoordinatorDashboardView adminView = new CoordinatorDashboardView(loggedInUser.username, database.getPendingUsers());
+                    new CoordinatorDashboardController(adminView, (HeadLabCoordinator) loggedInUser, database);
+                    adminView.setVisible(true);
 
+                } else if (loggedInUser.getAccountType().equals("Lab Manager")) {
+                    ManagerDashboardView managerView = new ManagerDashboardView(loggedInUser.username, database.getAvailableEquipment());
+                    new ManagerDashboardController(managerView, database);
+                    managerView.setVisible(true);
+
+                } else {
+                    DashboardView dashboardView = new DashboardView(loggedInUser, database.getAvailableEquipment());
+                    new DashboardController(dashboardView, database.getAvailableEquipment(), loggedInUser);
+                    dashboardView.setVisible(true);
+                }
+            } else {
+                view.showMessage("Invalid credentials! Please try again.", "Login Failed", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
