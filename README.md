@@ -24,3 +24,11 @@
 # Running Strategy patterns classes
 - `javac StrategyMain.java`
 - `java StrategyMain`
+- 
+# Running Observer Pattern classes
+- `javac ObserverPatterntest.java`
+- `java ObserverPatterntest`
+
+# Running Strategy patterns classes
+- `javac FactoryMain.java`
+- `java FactoryMain`
