@@ -13,7 +13,7 @@ public class LoginView extends JFrame {
     public LoginView(boolean backendPortal) {
         this.backendPortal = backendPortal;
 
-        // Force Java to use your computer's native UI look!
+
         try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
         catch (Exception e) {}
 
@@ -22,10 +22,10 @@ public class LoginView extends JFrame {
                 : "York University - Lab Equipment System");
         setSize(450, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Centers the window
+        setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // --- Header ---
+
         JPanel headerPanel = new JPanel();
         headerPanel.setBorder(new EmptyBorder(20, 10, 10, 10));
         JLabel titleLabel = new JLabel(backendPortal ? "Backend Staff Portal" : "Lab Equipment Portal");
@@ -34,12 +34,12 @@ public class LoginView extends JFrame {
         headerPanel.add(titleLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // --- Login Form ---
+
         JPanel formPanel = new JPanel(new GridBagLayout());
         formPanel.setBorder(new EmptyBorder(10, 40, 10, 40));
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL;
-        gbc.insets = new Insets(10, 10, 10, 10); // Spacing between rows
+        gbc.insets = new Insets(10, 10, 10, 10);
 
         // Row 1: Email
         gbc.gridx = 0; gbc.gridy = 0; gbc.weightx = 0.3;
@@ -59,7 +59,7 @@ public class LoginView extends JFrame {
 
         add(formPanel, BorderLayout.CENTER);
 
-        // --- Buttons ---
+
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
         buttonPanel.setBorder(new EmptyBorder(10, 10, 20, 10));
 
@@ -78,21 +78,21 @@ public class LoginView extends JFrame {
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
-    // Getters for the Controller
+
     public String getEmail() { return emailField.getText(); }
     public String getPassword() { return new String(passwordField.getPassword()); }
     public boolean isBackendPortal() { return backendPortal; }
 
-    // Listeners
+
     public void addLoginListener(ActionListener listener) { loginButton.addActionListener(listener); }
     public void addSignUpListener(ActionListener listener) { signUpButton.addActionListener(listener); }
 
-    // Multi-purpose message display
+
     public void showMessage(String msg) {
         JOptionPane.showMessageDialog(this, msg);
     }
 
-    // Kept this so your existing LoginController doesn't break!
+
     public void showMessage(String msg, String title, int messageType) {
         JOptionPane.showMessageDialog(this, msg, title, messageType);
     }

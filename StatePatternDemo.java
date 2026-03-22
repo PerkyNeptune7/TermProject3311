@@ -3,10 +3,7 @@ import java.time.LocalDateTime;
 public class StatePatternDemo {
 
    public static void main(String[] args) {
-       // =========================
        // Req6 demo: Equipment state
-       // =========================
-       //EquipmentForStatePattern microscope = new EquipmentForStatePattern("EQ-101", "Digital Microscope", "Lab A");
 
        EquipmentForStatePattern microscope = new EquipmentForStatePattern("EQ-101", "Digital Microscope", "Lab A");
  
@@ -25,19 +22,15 @@ public class StatePatternDemo {
 
        System.out.println("\n=========================\n");
 
-
-       // =========================
        // Req4 demo: Deposit state
-       // =========================
 
-       //ReservationforStatePattern reservation = new ReservationforStatePattern("RES-001", 10.0, LocalDateTime.now());
 
        ReservationforStatePattern reservation = new ReservationforStatePattern("RES-001", 10.0, LocalDateTime.now());
  
 
 
        reservation.payDeposit();
-       reservation.arrive(reservation.getStartTime().plusMinutes(10));  // on time
+       reservation.arrive(reservation.getStartTime().plusMinutes(10));
        System.out.println("Final amount due: $" + reservation.calculateFinalPayment(30.0));
 
 
@@ -45,7 +38,7 @@ public class StatePatternDemo {
 
 
  
-      // ReservationforStatePattern reservation2 = new ReservationforStatePattern("RES-002", 10.0, LocalDateTime.now());
+
 
        ReservationforStatePattern reservation2 = new ReservationforStatePattern("RES-002", 10.0, LocalDateTime.now());
  

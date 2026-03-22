@@ -33,7 +33,7 @@ public class DashboardView extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new GridLayout(4, 1, 10, 10));
 
-        // --- TOP PANEL: Book Equipment ---
+
         JPanel topPanel = new JPanel(new BorderLayout());
         topPanel.setBorder(BorderFactory.createTitledBorder("Available Equipment"));
 
@@ -46,7 +46,7 @@ public class DashboardView extends JFrame {
         topPanel.add(reserveButton, BorderLayout.SOUTH);
         add(topPanel);
 
-        // --- MIDDLE PANEL: Maintenance Equipment ---
+
         JPanel middlePanel = new JPanel(new BorderLayout());
         middlePanel.setBorder(BorderFactory.createTitledBorder("Equipment Under Maintenance"));
 
@@ -89,7 +89,7 @@ public class DashboardView extends JFrame {
         refreshEquipmentLists(equipment);
     }
 
-    // Getters for the Controller
+
     public int getSelectedEquipmentIndex() {
         int selectedIndex = availableEquipmentListUI.getSelectedIndex();
         if (selectedIndex == -1) {
@@ -104,14 +104,14 @@ public class DashboardView extends JFrame {
 
     public String getSelectedPendingBookingId() { return getBookingIdForIndex(pendingBookingIndices, pendingBookingListUI.getSelectedIndex()); }
 
-    // Listeners
+
     public void addReserveListener(ActionListener listener) { reserveButton.addActionListener(listener); }
     public void addCancelListener(ActionListener listener) { cancelButton.addActionListener(listener); }
     public void addExtendListener(ActionListener listener) { extendButton.addActionListener(listener); }
     public void addPayNowListener(ActionListener listener) { payNowButton.addActionListener(listener); }
     public void addLogoutListener(ActionListener listener) { logoutButton.addActionListener(listener); }
 
-    // Methods to update the UI
+
     public void refreshPendingBookings(List<PendingBooking> bookings) {
         String selectedBookingId = getSelectedPendingBookingId();
 

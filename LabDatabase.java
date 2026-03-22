@@ -28,7 +28,7 @@ public class LabDatabase {
         equipmentListeners = new ArrayList<>();
         bookingListeners = new ArrayList<>();
 
-        // --- FIX: Manually approve the hardcoded test accounts ---
+
         UserAccounts dummyStudent = userFactory.createUser("Student", "student1@yorku.ca", "pass123", "STU-1001");
         dummyStudent.isapproved = true;     // Bypass the queue
         dummyStudent.needsapproval = false;
@@ -38,17 +38,17 @@ public class LabDatabase {
         dummyFaculty.isapproved = true;     // Bypass the queue
         dummyFaculty.needsapproval = false;
         users.add(dummyFaculty);
-        // ---------------------------------------------------------
 
-        // 1. Add the Head Lab Coordinator to the system (Already approved by default)
+
+
         HeadLabCoordinator boss = HeadLabCoordinator.getInstance();
         users.add(boss);
 
-        // 2. Have the Coordinator auto-generate a Lab Manager for testing
+
         LabManager manager1 = boss.autoGenerateLabManager("manager1@yorku.ca", "managepass");
         users.add(manager1);
 
-        // Dummy Equipment
+
         addEquipmentInternal(new EquipmentForStatePattern("EQ-001", "Electron Microscope", "Room 101"));
         addEquipmentInternal(new EquipmentForStatePattern("EQ-002", "3D Printer", "Room 102"));
         addEquipmentInternal(new EquipmentForStatePattern("EQ-003", "Spectrometer", "Room 103"));

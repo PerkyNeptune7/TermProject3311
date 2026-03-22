@@ -12,7 +12,7 @@ public class RegistrationController {
         this.database = database;
 
         this.view.addSubmitListener(new SubmitAction());
-        this.view.addCancelListener(e -> view.dispose()); // Quickly close on cancel
+        this.view.addCancelListener(e -> view.dispose());
     }
 
     class SubmitAction implements ActionListener {
@@ -29,7 +29,7 @@ public class RegistrationController {
                 return;
             }
 
-            // 2. REQUIREMENT 1: Strong Password Validation
+            // 2. Requirement 1: Strong Password Validation
             // Must contain: 1 uppercase, 1 lowercase, 1 number, 1 special char, min 8 chars long.
             String passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$";
 

@@ -24,7 +24,7 @@ public class ManagerDashboardView extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10, 10));
 
-        // --- TOP PANEL: Add New Equipment ---
+
         JPanel addPanel = new JPanel(new GridLayout(2, 4, 5, 5));
         addPanel.setBorder(BorderFactory.createTitledBorder("Add New Equipment"));
 
@@ -44,7 +44,7 @@ public class ManagerDashboardView extends JFrame {
         addPanel.add(addButton);
         add(addPanel, BorderLayout.NORTH);
 
-        // --- CENTER PANEL: Equipment Lists ---
+
         JPanel equipmentPanel = new JPanel(new GridLayout(1, 2, 10, 10));
 
         equipmentModel = new DefaultListModel<>();
@@ -60,7 +60,7 @@ public class ManagerDashboardView extends JFrame {
         equipmentPanel.add(createEquipmentSection("Booked", bookedEquipmentListUI));
         add(equipmentPanel, BorderLayout.CENTER);
 
-        // --- BOTTOM PANEL: State Controls ---
+
         JPanel controlPanel = new JPanel();
         enableButton = new JButton("Enable");
         disableButton = new JButton("Disable");

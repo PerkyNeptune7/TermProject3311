@@ -7,7 +7,7 @@ public class CoordinatorDashboardController {
     private CoordinatorDashboardView view;
     private HeadLabCoordinator coordinator;
     private LabDatabase database;
-    private List<UserAccounts> pendingQueue; // Keep track of the queue list
+    private List<UserAccounts> pendingQueue; 
     private Runnable pendingUsersRefreshListener;
 
     public CoordinatorDashboardController(CoordinatorDashboardView view, HeadLabCoordinator coordinator, LabDatabase database) {
@@ -50,7 +50,7 @@ public class CoordinatorDashboardController {
         }
     }
 
-    // --- REQ 1: Departmental Approval Logic ---
+
     class ApproveAction implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {

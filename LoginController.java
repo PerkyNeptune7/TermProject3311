@@ -58,7 +58,7 @@ public class LoginController {
 
                 view.dispose(); // Close login window on success
 
-                // --- ROUTING LOGIC ---
+
                 if (loggedInUser.getAccountType().equals("Head Lab Coordinator")) {
                     CoordinatorDashboardView adminView = new CoordinatorDashboardView(loggedInUser.username, database.getPendingUsers());
                     new CoordinatorDashboardController(adminView, (HeadLabCoordinator) loggedInUser, database);

@@ -190,4 +190,4 @@ public class DashboardController {
         view.refreshPendingBookings(database.getPendingBookingsForUser(currentUser.username));
         view.refreshReservedBookings(database.getReservedBookingsForUser(currentUser.username));
     }
-} // <- This is the closing brace for DashboardController!
+}

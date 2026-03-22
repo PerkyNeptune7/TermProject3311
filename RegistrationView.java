@@ -7,7 +7,7 @@ public class RegistrationView extends JFrame {
     private JTextField emailField;
     private JPasswordField passwordField;
     private JTextField idField;
-    private JComboBox<String> roleDropdown; // This handles the Account Type!
+    private JComboBox<String> roleDropdown;
     private JButton submitButton;
     private JButton cancelButton;
 
@@ -21,7 +21,7 @@ public class RegistrationView extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // --- Header ---
+
         JPanel headerPanel = new JPanel();
         headerPanel.setBorder(new EmptyBorder(20, 10, 10, 10));
         JLabel titleLabel = new JLabel("Account Registration");
@@ -29,21 +29,21 @@ public class RegistrationView extends JFrame {
         headerPanel.add(titleLabel);
         add(headerPanel, BorderLayout.NORTH);
 
-        // --- Registration Form ---
+
         JPanel formPanel = new JPanel(new GridBagLayout());
         formPanel.setBorder(new EmptyBorder(10, 30, 10, 30));
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.HORIZONTAL;
         gbc.insets = new Insets(12, 10, 12, 10);
 
-        // Row 1: Email
+
         gbc.gridx = 0; gbc.gridy = 0; gbc.weightx = 0.4;
         formPanel.add(new JLabel("Email Address:"), gbc);
         gbc.gridx = 1; gbc.gridy = 0; gbc.weightx = 0.6;
         emailField = new JTextField();
         formPanel.add(emailField, gbc);
 
-        // Row 2: Password
+
         gbc.gridx = 0; gbc.gridy = 1;
         formPanel.add(new JLabel("Strong Password:"), gbc);
         gbc.gridx = 1; gbc.gridy = 1;
@@ -67,7 +67,7 @@ public class RegistrationView extends JFrame {
 
         add(formPanel, BorderLayout.CENTER);
 
-        // --- Buttons ---
+
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
         buttonPanel.setBorder(new EmptyBorder(10, 10, 20, 10));
 
@@ -82,15 +82,15 @@ public class RegistrationView extends JFrame {
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
-    // Getters for the Controller
+
     public String getEmail() { return emailField.getText(); }
     public String getPassword() { return new String(passwordField.getPassword()); }
     public String getId() { return idField.getText(); }
 
-    // This perfectly grabs the selected string ("Student", "Faculty", etc.)
+
     public String getSelectedRole() { return (String) roleDropdown.getSelectedItem(); }
 
-    // Listeners
+
     public void addSubmitListener(ActionListener listener) { submitButton.addActionListener(listener); }
     public void addCancelListener(ActionListener listener) { cancelButton.addActionListener(listener); }
 
