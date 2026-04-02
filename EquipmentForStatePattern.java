@@ -23,6 +23,14 @@ public class EquipmentForStatePattern {
        state.reserve(this);
    }
 
+   public void markPendingPickup() {
+       setState(new PendingPickupState());
+   }
+
+   public void confirmReservation() {
+       setState(new ReservedEquipmentState());
+   }
+
 
    public void release() {
        state.release(this);
@@ -61,5 +69,13 @@ public class EquipmentForStatePattern {
 
    public String getLocation() {
        return location;
+   }
+
+   public String getStateName() {
+       return state.getStateName();
+   }
+
+   public boolean isAvailable() {
+       return "AVAILABLE".equals(state.getStateName());
    }
 }
