@@ -1,0 +1,186 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+//add import lines when adding test cases in src method
+public class EquipmentFactoryTest {
+    //Human tests
+    @Test
+    public void  createMicroscope_shouldInitializeFieldsCorrectly(){
+        EquipmentFactory factory = new EquipmentFactory();
+        Equipment eq = factory.createEquipment(
+                "Microscope",
+                "Optical Microscope",
+                "Used for viewing small objects",
+                "Lab A" );
+        assertNotNull(eq);
+        assertEquals("Optical Microscope", eq.getName());
+        assertEquals("Used for viewing small objects", eq.getDescription());
+        assertEquals("Lab A", eq.getLocation());
+        assertEquals(EquipmentStatus.AVAILABLE, eq.getStatus());
+    }
+    @Test
+    public void  createArduino_shouldInitializeFieldsCorrectly(){
+        EquipmentFactory factory = new EquipmentFactory();
+        Equipment eq = factory.createEquipment(
+                "Arduino",
+                "Arduino Uno",
+                "Microcontroller board for prototyping",
+                "Lab B" );
+        assertNotNull(eq);
+        assertEquals("Arduino Uno", eq.getName());
+                assertEquals("Microcontroller board for prototyping", eq.getDescription());
+        assertEquals("Lab B", eq.getLocation());
+        assertEquals(EquipmentStatus.AVAILABLE, eq.getStatus());
+    }
+    @Test
+    public void  createArduino2_shouldInitializeFieldsCorrectly(){
+        EquipmentFactory factory = new EquipmentFactory();
+        Equipment eq = factory.createEquipment(
+                "Arduino",
+                "Arduino Micro",
+                "Microcontroller board for prototyping",
+                "Lab C" );
+        assertNotNull(eq);
+        assertEquals("Arduino Micro", eq.getName());
+        assertEquals("Microcontroller board for prototyping", eq.getDescription());
+        assertEquals("Lab C", eq.getLocation());
+        assertEquals(EquipmentStatus.AVAILABLE, eq.getStatus());
+    }
+
+    @Test
+    public void invalidEquipmentType_shouldThrowException() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            factory.createEquipment(
+                    "Unknown",
+                    "Test",
+                    "Invalid",
+                    "Nowhere"
+            );
+        });
+    }
+
+    @Test
+    public void partialyinvalidEquipmentType_shouldThrowException(){
+        EquipmentFactory factory = new EquipmentFactory();
+
+        assertThrows(IllegalArgumentException.class, () -> {
+            factory.createEquipment(
+                    "Computer Mouse",
+                    "Cheddar",
+                    "A mouse you can plug into your computer",
+                    "Lab 2"
+            );
+        });
+    }
+//AI generated test cases
+
+    @Test
+    public void createArduino_InitializeFieldsCorrectly() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        Equipment eq = factory.createEquipment(
+                "Arduino",
+                "Arduino Uno",
+                "Microcontroller board",
+                "Lab B"
+        );
+
+        assertNotNull(eq);
+        assertEquals("Arduino Uno", eq.getName());
+        assertEquals("Microcontroller board", eq.getDescription());
+        assertEquals("Lab B", eq.getLocation());
+        assertEquals(EquipmentStatus.AVAILABLE, eq.getStatus());
+    }
+
+    @Test
+    public void createMicroscope_shouldReturnMicroscopeInstance() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        Equipment eq = factory.createEquipment(
+                "Microscope",
+                "Scope",
+                "Desc",
+                "Lab A"
+        );
+
+        assertTrue(eq instanceof Microscope);
+    }
+
+    @Test
+    public void createArduino_shouldReturnArduinoInstance() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        Equipment eq = factory.createEquipment(
+                "Arduino",
+                "Uno",
+                "Desc",
+                "Lab B"
+        );
+
+        assertTrue(eq instanceof Arduino);
+    }
+
+    @Test
+    public void createEquipment_shouldIgnoreCase() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        Equipment eq = factory.createEquipment(
+                "mIcRoScOpE",
+                "Case Test",
+                "Desc",
+                "Lab C"
+        );
+
+        assertTrue(eq instanceof Microscope);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void createEquipment_invalidType_shouldThrowException() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        factory.createEquipment(
+                "Laptop",
+                "Dell",
+                "Invalid",
+                "Lab D"
+        );
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void createEquipment_emptyType_shouldThrowException() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        factory.createEquipment(
+                "",
+                "Empty",
+                "Desc",
+                "Lab E"
+        );
+    }
+    @Test(expected = NullPointerException.class)
+    public void createEquipment_nullType_shouldThrowException() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        factory.createEquipment(
+                null,
+                "Null",
+                "Desc",
+                "Lab F"
+        );
+    }
+    @Test
+    public void createEquipment_shouldGenerateEquipmentId() {
+        EquipmentFactory factory = new EquipmentFactory();
+
+        Equipment eq = factory.createEquipment(
+                "Arduino",
+                "Uno",
+                "Desc",
+                "Lab G"
+        );
+
+        assertNotNull(eq.getEquipmentId());
+        assertTrue(eq.getEquipmentId().startsWith("EQ-"));
+    }
+
+    //randoop generated
+}
