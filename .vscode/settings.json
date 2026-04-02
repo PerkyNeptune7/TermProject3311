@@ -1,3 +1,10 @@
 {
-    "workbench.editor.wrapTabs": true
+  "java.project.sourcePaths": [
+    "src/java",
+    "src/test"
+  ],
+  "java.project.outputPath": "out",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ]
 }

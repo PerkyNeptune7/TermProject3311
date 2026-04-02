@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "lib\\junit-platform-console-standalone-6.0.3.jar",
+        "c:\\Users\\sazuh\\OneDrive\\Documents\\GitHub\\TermProject3311\\lib\\junit-platform-console-standalone-6.0.3.jar"
+    ]
+}
