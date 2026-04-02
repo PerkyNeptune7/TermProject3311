@@ -1,8 +1,7 @@
-package src.test;
+package src.test.manual_test;
 
 import org.junit.jupiter.api.Test;
 import src.java.PricingStrategy;
-import src.java.ResearcherPricing;
 import src.java.StudentPricing;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
