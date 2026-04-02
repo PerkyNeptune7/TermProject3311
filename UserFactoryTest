@@ -1,0 +1,196 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class UserFactoryTest {
+
+    //human generated
+    @Test
+    public void createStudent_shouldInitializeFieldsCorrectly() {
+        UserFactory factory = new UserFactory();
+        UserAccounts ac = factory.createUser(
+                "Student",
+                "Bobby135",
+                "Up2okjh$"
+        );
+        assertNotNull(ac);
+        assertEquals("Student", ac.getAccountType());
+    }
+
+    @Test
+    public void createFaculty_shouldInitializeFieldsCorrectly() {
+        UserFactory factory = new UserFactory();
+        UserAccounts ac = factory.createUser(
+                "Faculty",
+                "Shaun143",
+                "$2rhurijk"
+        );
+        assertNotNull(ac);
+        assertEquals("Faculty", ac.getAccountType());
+    }
+
+    @Test
+    public void createResearcher_shouldInitializeFieldsCorrectly() {
+        UserFactory factory = new UserFactory();
+        UserAccounts ac = factory.createUser(
+                "Researcher",
+                "Bella0013",
+                "$2rfi2jq"
+        );
+        assertNotNull(ac);
+        assertEquals("Researcher", ac.getAccountType());
+    }
+
+    @Test
+    public void createGuest_shouldInitializeFieldsCorrectly() {
+        UserFactory factory = new UserFactory();
+        UserAccounts ac = factory.createUser(
+                "Guest",
+                "Carly19j",
+                "gi3nN@m"
+        );
+        assertNotNull(ac);
+        assertEquals("Guest", ac.getAccountType());
+    }
+
+    @Test
+    public void invalidUserType_shouldThrowException() {
+        UserFactory factory = new UserFactory();
+
+        UserAccounts user = factory.createUser(
+                "Unknown",
+                "Test",
+                "Invalid"
+        );
+
+        assertNull(user);
+    }
+    @Test
+    public void student_shouldRequireApproval() {
+        Student student = new Student("Lucy123", "g3n2in", "213456");
+
+        assertTrue(student.needsapproval);
+        assertFalse(student.isapproved);
+    }
+    @Test
+    public void faculty_shouldRequireApproval() {
+        Faculty faculty = new Faculty("Grace491u", "g3bu2g3", "1294921");
+
+        assertTrue(faculty.needsapproval);
+        assertFalse(faculty.isapproved);
+    }
+    @Test
+    public void researcher_shouldRequireApproval() {
+        Researcher researcher = new Researcher("John298", "u29n@", "09876");
+
+        assertTrue(researcher.needsapproval);
+        assertFalse(researcher.isapproved);
+    }
+    @Test
+    public void guest_shouldnotRequireApproval() {
+        Guest guest = new Guest("John298", "u29n@", "09876");
+
+        assertFalse(guest.needsapproval);
+        assertTrue(guest.isapproved);
+    }
+    //Ai genereated
+    private final UserFactory factory = new UserFactory();
+
+    // 1. Create Student – Fields initialized correctly
+    @Test
+    public void createStuden_shouldInitializeFieldsCorrectly() {
+        UserAccounts student = factory.createUser("Student", "john123", "Pass@123");
+        assertNotNull(student);
+        assertEquals("john123", student.username);
+        assertEquals("Student", student.getAccountType());
+        assertTrue(student.needsapproval);
+        assertFalse(student.isapproved);
+        assertNotNull(student.getRegistrationId());
+        assertTrue(student.getHourlyRate() > 0);
+    }
+
+    // 2. Create Guest – Approval and pricing set correctly
+    @Test
+    public void createGuest_shouldSetApprovalAndPricing() {
+        UserAccounts guest = factory.createUser("Guest", "guest1", "Temp@123");
+        assertEquals("Guest", guest.getAccountType());
+        assertFalse(guest.needsapproval);
+        assertTrue(guest.isapproved);
+        assertNotNull(guest.getRegistrationId());
+        assertTrue(guest.getHourlyRate() > 0);
+    }
+
+    // 3. Create Faculty – Fields initialized correctly
+    @Test
+    public void creatFaculty_shouldInitializeFieldsCorrectly() {
+        UserAccounts faculty = factory.createUser("Faculty", "alice456", "Pass@456");
+        assertNotNull(faculty);
+        assertEquals("Faculty", faculty.getAccountType());
+        assertTrue(faculty.needsapproval);
+        assertFalse(faculty.isapproved);
+        assertNotNull(faculty.getRegistrationId());
+        assertTrue(faculty.getHourlyRate() >= 0);
+    }
+
+    // 4. Create Researcher – Fields and type correct
+    @Test
+    public void createResearcher_shouldReturnCorrectTypeAndId() {
+        UserAccounts researcher = factory.createUser("Researcher", "bob789", "Pass@789");
+        assertEquals("Researcher", researcher.getAccountType());
+        assertNotNull(researcher.getRegistrationId());
+        assertTrue(researcher.needsapproval);
+        assertFalse(researcher.isapproved);
+        assertTrue(researcher.getHourlyRate() >= 0);
+    }
+
+    // 5. Case insensitivity – Account type
+    @Test
+    public void createUser_accountTypeShouldIgnoreCase() {
+        UserAccounts student = factory.createUser("sTuDeNt", "case1", "Pass@321");
+        assertEquals("Student", student.getAccountType());
+
+        UserAccounts guest = factory.createUser("GuEsT", "guest2", "Pass@123");
+        assertEquals("Guest", guest.getAccountType());
+    }
+
+    // 6. Null username – Should throw exception
+    @Test(expected = NullPointerException.class)
+    public void createUser_nullUsername_shouldThrowException() {
+        factory.createUser("Student", null, "Pass@123");
+    }
+
+    // 7. Null password – Should throw exception
+    @Test(expected = NullPointerException.class)
+    public void createUser_nullPassword_shouldThrowException() {
+        factory.createUser("Faculty", "user1", null);
+    }
+
+    // 8. Invalid account type – Should return null
+    @Test
+    public void createUser_invalidType_shouldReturnNull() {
+        UserAccounts invalid = factory.createUser("UnknownType", "u1", "Pass@123");
+        assertNull(invalid);
+    }
+
+    // 9. Multiple users – Distinct registration IDs
+    @Test
+    public void createMultipleUsers_shouldHaveDistinctIds() {
+        UserAccounts u1 = factory.createUser("Student", "userA", "PassA");
+        UserAccounts u2 = factory.createUser("Student", "userB", "PassB");
+        assertNotEquals(u1.getRegistrationId(), u2.getRegistrationId());
+    }
+
+    // 10. Hourly rate – All account types have valid rate
+    @Test
+    public void createUser_hourlyRateShouldBeDefined() {
+        UserAccounts student = factory.createUser("Student", "s1", "Pass1");
+        UserAccounts faculty = factory.createUser("Faculty", "f1", "Pass2");
+        UserAccounts researcher = factory.createUser("Researcher", "r1", "Pass3");
+        UserAccounts guest = factory.createUser("Guest", "g1", "Pass4");
+
+        assertTrue(student.getHourlyRate() > 0);
+        assertTrue(faculty.getHourlyRate() >= 0);
+        assertTrue(researcher.getHourlyRate() >= 0);
+        assertTrue(guest.getHourlyRate() > 0);
+    }
+
+}
