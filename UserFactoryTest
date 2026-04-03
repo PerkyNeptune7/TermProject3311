@@ -1,6 +1,15 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
+//these imports are needed because these classes are in a separte folder in the updated way we are separting classes vs test cases
+/*
+import UserFactory;
+import UserAccounts;
+import Student;
+import Researcher;
+import Guest;
+import Faculty;
 
+ */
 public class UserFactoryTest {
 
     //human generated
@@ -92,7 +101,10 @@ public class UserFactoryTest {
         assertFalse(guest.needsapproval);
         assertTrue(guest.isapproved);
     }
+
     //Ai genereated
+
+
     private final UserFactory factory = new UserFactory();
 
     // 1. Create Student – Fields initialized correctly
