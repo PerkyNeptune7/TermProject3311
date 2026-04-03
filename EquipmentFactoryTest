@@ -1,6 +1,12 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
-//add import lines when adding test cases in src method
+/*
+import lines needed since different folders
+import Arduino;
+import Equipment;
+import EquipmentFactory;
+import Microscope;
+*/
 public class EquipmentFactoryTest {
     //Human tests
     @Test
@@ -73,6 +79,8 @@ public class EquipmentFactoryTest {
             );
         });
     }
+
+
 //AI generated test cases
 
     @Test
