@@ -1,0 +1,73 @@
+import static org.junit.Assert.*;
+import org.junit.Test;
+//import HeadLabCoordinator;
+public class HeadLabCoordinatorTest {
+    // human
+    @Test
+    public void oneInstance_ofHeadLab(){
+        HeadLabCoordinator labcoordinatorA = HeadLabCoordinator.getInstance();
+        HeadLabCoordinator labcoordinatorB = HeadLabCoordinator.getInstance();
+
+        assertNotNull(labcoordinatorA);
+        assertSame(labcoordinatorA, labcoordinatorA);
+    }
+    @Test
+    public void labcoordinator_shouldRequireApproval() {
+        HeadLabCoordinator labcoordinatorA = HeadLabCoordinator.getInstance();
+
+        assertFalse(labcoordinatorA.needsapproval);
+        assertTrue(labcoordinatorA.isapproved);
+    }
+
+//AI generated
+
+
+// 1. Singleton – Only one instance should exist
+@Test
+public void getInstance_shouldReturnSameInstance() {
+    HeadLabCoordinator c1 = HeadLabCoordinator.getInstance();
+    HeadLabCoordinator c2 = HeadLabCoordinator.getInstance();
+
+    assertNotNull(c1);
+    assertSame(c1, c2); // same reference
+}
+
+    // 2. Default values – Approval flags set correctly
+    @Test
+    public void getInstance_shouldInitializeApprovalCorrectly() {
+        HeadLabCoordinator coordinator = HeadLabCoordinator.getInstance();
+
+        assertFalse(coordinator.needsapproval);
+        assertTrue(coordinator.isapproved);
+    }
+
+    // 3. Account type – Correct override
+    @Test
+    public void getAccountType_shouldReturnCorrectType() {
+        HeadLabCoordinator coordinator = HeadLabCoordinator.getInstance();
+
+        assertEquals("Head Lab Coordinator", coordinator.getAccountType());
+    }
+
+    // 4. Singleton – Default values are consistent
+    @Test
+    public void getInstance_shouldHaveConsistentDefaultValues() {
+        HeadLabCoordinator coordinator = HeadLabCoordinator.getInstance();
+
+        assertEquals("COORD-001", coordinator.getRegistrationId());
+        assertEquals("headcoord@yorku.ca", coordinator.username);
+    }
+
+    // 5. autoGenerateLabManager – Creates valid LabManager
+    @Test
+    public void autoGenerateLabManager_shouldCreateValidManager() {
+        HeadLabCoordinator coordinator = HeadLabCoordinator.getInstance();
+
+        LabManager manager = coordinator.autoGenerateLabManager("manager1", "Pass@123");
+
+        assertNotNull(manager);
+        assertEquals("manager1", manager.username);
+        assertNotNull(manager.getRegistrationId());
+        assertTrue(manager.getRegistrationId().startsWith("MANAGER-"));
+    }
+}
