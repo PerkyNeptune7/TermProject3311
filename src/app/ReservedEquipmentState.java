@@ -1,6 +1,6 @@
 package app;
 
-class ReservedEquipmentState implements EquipmentState {
+public class ReservedEquipmentState implements EquipmentState {
    @Override
    public void reserve(EquipmentForStatePattern equipment) {
        System.out.println("Equipment is already reserved.");
