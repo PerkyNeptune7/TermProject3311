@@ -6,7 +6,7 @@
 # Compiling and running the Test Cases
 - `mkdir -p bin`
 - `javac -d bin -cp "bin:junit-4.13.2.jar:hamcrest-core-1.3.jar" $(find src/test -name "*.java")`
-- `java -Xmx4G -jar junit-platform-console-standalone-1.10.1.jar -cp "bin" --scan-classpath --details=summary`
+- `java -Xmx4G -jar junit-platform-console-standalone-1.10.1.jar -cp "bin" --scan-classpath --include-classname=".*" --details=summary`
 
 # Running a simulation using dummy data 
 ## Option 1:
