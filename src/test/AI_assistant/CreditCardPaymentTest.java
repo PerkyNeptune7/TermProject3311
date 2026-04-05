@@ -1,8 +1,8 @@
-package src.test.AI_assistant;
+package test.AI_assistant;
 
 import org.junit.Test;
-import src.java.CreditCardPayment;
-import src.java.PaymentStrategy;
+import app.CreditCardPayment;
+import app.PaymentStrategy;
 
 import static org.junit.Assert.assertEquals;
 

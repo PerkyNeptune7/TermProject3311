@@ -1,17 +1,16 @@
-package src.test.manual_test;
+package test.manual_test;
 
-import org.junit.jupiter.api.Test;
-import src.java.PricingStrategy;
-import src.java.ResearcherPricing;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals; // Added JUnit 4 assertNotEquals
+import app.PricingStrategy;
+import app.ResearcherPricing;
 
 public class ResearcherPricingTest {
 
     @Test
     public void testResearcherPricing_ReturnsCorrectRate() {
-        // 1. Arrange: Set up the specific strategy we want to src.test
+        // 1. Arrange: Set up the specific strategy we want to test
         PricingStrategy researcherStrategy = new ResearcherPricing();
         double expectedRate = 20.0;
 
@@ -22,7 +21,8 @@ public class ResearcherPricingTest {
         double actualRate = researcherStrategy.calculateRate();
 
         // 3. Assert: Verify the actual result matches our expectation
-        assertEquals(expectedRate, actualRate, delta, "The student rate should be exactly $10.0");
+        // FIX: Moved message to the front, updated text to mention Researcher and $20.0
+        assertEquals("The researcher rate should be exactly $20.0", expectedRate, actualRate, delta);
     }
 
     @Test
@@ -38,6 +38,7 @@ public class ResearcherPricingTest {
         double actualRate = researcherStrategy.calculateRate();
 
         // 3. Assert: Verify the actual result does NOT match the incorrect rate
-        assertNotEquals(incorrectRate, actualRate, delta, "A researchers should never be charged the $10.0 student rate");
+        // FIX: Moved message to the front, fixed typo "researchers" -> "researcher"
+        assertNotEquals("A researcher should never be charged the $10.0 student rate", incorrectRate, actualRate, delta);
     }
 }

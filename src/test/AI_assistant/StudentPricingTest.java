@@ -1,8 +1,8 @@
-package src.test.AI_assistant;
+package test.AI_assistant;
 import org.junit.Before;
 import org.junit.Test;
-import src.java.PricingStrategy;
-import src.java.StudentPricing;
+import app.PricingStrategy;
+import app.StudentPricing;
 
 import static org.junit.Assert.*;
 

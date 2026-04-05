@@ -1,9 +1,9 @@
-package src.test.manual_test;
+package test.manual_test;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import src.java.GrantPayment;
-import src.java.PaymentStrategy;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import app.GrantPayment;
+import app.PaymentStrategy;
 
 public class GrantPaymentTest {
 
@@ -12,14 +12,15 @@ public class GrantPaymentTest {
         // 1. Arrange
         PaymentStrategy grantStrategy = new GrantPayment();
         double amount = 100.00;
-        // Expecting $100 + 2% ($2.00) = $102.00
+        // Expecting exact deduction of $100.00
         String expectedMessage = "Deducting $100.00 from registered Research Grant funds.";
 
         // 2. Act
         String actualMessage = grantStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should correctly deduct money from registered account");
+        // FIX: Message goes FIRST in JUnit 4
+        assertEquals("Should correctly deduct money from registered account", expectedMessage, actualMessage);
     }
 
     @Test
@@ -33,7 +34,8 @@ public class GrantPaymentTest {
         String actualMessage = grantStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should safely handle an amount of zero");
+        // FIX: Message goes FIRST in JUnit 4
+        assertEquals("Should safely handle an amount of zero", expectedMessage, actualMessage);
     }
 
     @Test
@@ -41,13 +43,14 @@ public class GrantPaymentTest {
         // 1. Arrange
         PaymentStrategy grantStrategy = new GrantPayment();
         double amount = 10.55;
-        // 10.55 * 1.02 = 10.761, which should format perfectly to $10.76
+        // Expecting exact deduction of $10.55
         String expectedMessage = "Deducting $10.55 from registered Research Grant funds.";
 
         // 2. Act
         String actualMessage = grantStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should correctly round standard decimals to two places");
+        // FIX: Message goes FIRST in JUnit 4
+        assertEquals("Should correctly round standard decimals to two places", expectedMessage, actualMessage);
     }
 }

@@ -1,4 +1,4 @@
-package src.test.randoop;
+package test.randoop;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 

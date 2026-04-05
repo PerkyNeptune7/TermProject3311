@@ -1,9 +1,9 @@
-package src.test.manual_test;
+package test.manual_test;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import src.java.DebitCardPayment;
-import src.java.PaymentStrategy;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import app.DebitCardPayment;
+import app.PaymentStrategy;
 
 public class DebitPaymentTest {
 
@@ -12,13 +12,15 @@ public class DebitPaymentTest {
         // 1. Arrange
         PaymentStrategy debitCardStrategy = new DebitCardPayment();
         double amount = 100.00;
-        // Expecting $100 + 2% ($2.00) = $102.00
+        // Expecting exactly $100.00 (No fees for Debit)
         String expectedMessage = "Processing direct debit payment of $100.00. No extra fees.";
+
         // 2. Act
         String actualMessage = debitCardStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should correctly calculate a 0% fee on a standard amount");
+        // FIX: Message goes FIRST in JUnit 4
+        assertEquals("Should correctly process a 0% fee on a standard amount", expectedMessage, actualMessage);
     }
 
     @Test
@@ -32,7 +34,8 @@ public class DebitPaymentTest {
         String actualMessage = debitCardStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should safely handle an amount of zero");
+        // FIX: Message goes FIRST in JUnit 4
+        assertEquals("Should safely handle an amount of zero", expectedMessage, actualMessage);
     }
 
     @Test
@@ -40,13 +43,14 @@ public class DebitPaymentTest {
         // 1. Arrange
         PaymentStrategy debitCardStrategy = new DebitCardPayment();
         double amount = 10.55;
-        // 10.55 * 1.02 = 10.761, which should format perfectly to $10.76
+        // Expecting exactly $10.55 (No fees for Debit)
         String expectedMessage = "Processing direct debit payment of $10.55. No extra fees.";
 
         // 2. Act
         String actualMessage = debitCardStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should correctly round standard decimals to two places");
+        // FIX: Message goes FIRST in JUnit 4
+        assertEquals("Should correctly format decimals to two places", expectedMessage, actualMessage);
     }
 }

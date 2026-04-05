@@ -1,9 +1,9 @@
-package src.test.manual_test;
+package test.manual_test;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import src.java.CreditCardPayment;
-import src.java.PaymentStrategy;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import app.CreditCardPayment;
+import app.PaymentStrategy;
 
 public class CreditPaymentTest {
 
@@ -19,7 +19,8 @@ public class CreditPaymentTest {
         String actualMessage = creditCardStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should correctly calculate a 2% fee on a standard amount");
+        // FIX: Moved message to the front for JUnit 4
+        assertEquals("Should correctly calculate a 2% fee on a standard amount", expectedMessage, actualMessage);
     }
 
     @Test
@@ -33,7 +34,8 @@ public class CreditPaymentTest {
         String actualMessage = creditCardStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should safely handle an amount of zero");
+        // FIX: Moved message to the front for JUnit 4
+        assertEquals("Should safely handle an amount of zero", expectedMessage, actualMessage);
     }
 
     @Test
@@ -48,6 +50,7 @@ public class CreditPaymentTest {
         String actualMessage = creditCardStrategy.processPayment(amount);
 
         // 3. Assert
-        assertEquals(expectedMessage, actualMessage, "Should correctly round standard decimals to two places");
+        // FIX: Moved message to the front for JUnit 4
+        assertEquals("Should correctly round standard decimals to two places", expectedMessage, actualMessage);
     }
 }

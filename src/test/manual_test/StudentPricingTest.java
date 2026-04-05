@@ -1,18 +1,16 @@
-package src.test.manual_test;
+package test.manual_test;
 
-import org.junit.jupiter.api.Test;
-import src.java.PricingStrategy;
-import src.java.StudentPricing;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals; // Swapped to JUnit 4
+import app.PricingStrategy;
+import app.StudentPricing;
 
 public class StudentPricingTest {
 
-
     @Test
     public void testStudentPricing_ReturnsCorrectRate() {
-        // 1. Arrange: Set up the specific strategy we want to src.test
+        // 1. Arrange: Set up the specific strategy we want to test
         PricingStrategy studentStrategy = new StudentPricing();
         double expectedRate = 10.0;
 
@@ -23,7 +21,8 @@ public class StudentPricingTest {
         double actualRate = studentStrategy.calculateRate();
 
         // 3. Assert: Verify the actual result matches our expectation
-        assertEquals(expectedRate, actualRate, delta, "The student rate should be exactly $10.0");
+        // FIX: In JUnit 4, the String message goes FIRST
+        assertEquals("The student rate should be exactly $10.0", expectedRate, actualRate, delta);
     }
 
     @Test
@@ -31,7 +30,7 @@ public class StudentPricingTest {
         // 1. Arrange: Set up the strategy and the INCORRECT value we want to guard against
         PricingStrategy studentStrategy = new StudentPricing();
 
-        // We know researchers should pay $20.0, so $10.0 is deliberately wrong
+        // We know students should pay $10.0, so $15.0 is deliberately wrong
         double incorrectRate = 15.0;
         double delta = 0.001;
 
@@ -39,6 +38,7 @@ public class StudentPricingTest {
         double actualRate = studentStrategy.calculateRate();
 
         // 3. Assert: Verify the actual result does NOT match the incorrect rate
-        assertNotEquals(incorrectRate, actualRate, delta, "A student should never be charged the $10.0 student rate");
+        // FIX: In JUnit 4, the String message goes FIRST
+        assertNotEquals("A student should never be charged the $15.0 faculty rate", incorrectRate, actualRate, delta);
     }
 }
