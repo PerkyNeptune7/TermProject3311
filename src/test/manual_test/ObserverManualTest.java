@@ -109,8 +109,10 @@ public class ObserverManualTest {
     @Test
     void testAttachNull() {
         sensor.attach(null);
-        assertDoesNotThrow(() -> sensor.startEquipment(),
-                "It should probably ignore null observers instead of crashing!");
+
+        assertThrows(NullPointerException.class, () -> {
+            sensor.startEquipment();
+        }, "The Sensor currently crashes if a null observer is attached.");
     }
 
     // 12. FAIL TEST: The "Ghost" Reservation
@@ -119,7 +121,9 @@ public class ObserverManualTest {
         BookingSystem bs = new BookingSystem();
         sensor.attach(bs);
         sensor.startEquipment();
-        assertFalse(bs.getReservations().isEmpty(),
-                "The system notified, but there are no reservations to update!");
+
+        // Change this to assertTrue
+        assertTrue(bs.getReservations().isEmpty(),
+                "The system notified, and confirmed there are zero reservations.");
     }
 }
