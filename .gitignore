@@ -1,6 +1,8 @@
 # Ignore all compiled class files
 *.class
-
+out/
+*.exec
+bin/
 target/
 build/
 
@@ -9,3 +11,8 @@ build/
 .project
 .idea/
 *.iml
+
+*.jar
+*.zip
+
+*.txt
