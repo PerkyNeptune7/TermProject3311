@@ -2,7 +2,7 @@ package app;
 
 import java.time.LocalDateTime;
 
-class DepositAppliedState implements DepositState {
+public class DepositAppliedState implements DepositState {
     
 
    @Override

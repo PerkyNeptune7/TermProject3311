@@ -1,10 +1,9 @@
-package manual;
+package test.manual_test;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-import src.java.*;
-import src.app.*;
+import app.*;
 
 public class StatePatternTest {
 

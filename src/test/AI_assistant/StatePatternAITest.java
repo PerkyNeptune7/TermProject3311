@@ -1,9 +1,10 @@
-package AI;
+package test.AI_assistant;
 
 import static org.junit.Assert.*;
 
 import java.time.LocalDateTime;
 
+import app.*;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,6 +1,6 @@
 package app;
 
-class MaintenanceState implements EquipmentState {
+public class MaintenanceState implements EquipmentState {
 
    @Override
    public void reserve(EquipmentForStatePattern equipment) {
