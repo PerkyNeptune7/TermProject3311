@@ -3,7 +3,7 @@ package app;
 import java.time.LocalDateTime;
 import java.time.Duration;
 
-class DepositPaidState implements DepositState {
+public class DepositPaidState implements DepositState {
  
    @Override
    public void payDeposit(ReservationforStatePattern reservation) {
