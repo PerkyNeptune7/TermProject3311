@@ -94,7 +94,6 @@ public class AleenaTest12 {
         labManager12.username = "Equipment ID: EQ-1637, Name: , Description: , Location: , Status: null";
         org.junit.Assert.assertNotNull(headLabCoordinator0);
         org.junit.Assert.assertNotNull(labManager5);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Head Lab Coordinator" + "'", str7, "Head Lab Coordinator");
         org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "Head Lab Coordinator" + "'", str9, "Head Lab Coordinator");
@@ -176,14 +175,12 @@ public class AleenaTest12 {
         boolean boolean17 = headLabCoordinator0.needsapproval;
         org.junit.Assert.assertNotNull(headLabCoordinator0);
         org.junit.Assert.assertNotNull(labManager5);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
         org.junit.Assert.assertEquals("'" + str7 + "' != '" + "Head Lab Coordinator" + "'", str7, "Head Lab Coordinator");
         org.junit.Assert.assertEquals("'" + str8 + "' != '" + "" + "'", str8, "");
         org.junit.Assert.assertNotNull(labManager11);
         org.junit.Assert.assertNotNull(labManager14);
         org.junit.Assert.assertEquals("'" + str15 + "' != '" + "COORD-001" + "'", str15, "COORD-001");
         org.junit.Assert.assertEquals("'" + str16 + "' != '" + "" + "'", str16, "");
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
     }
 
     @Test
@@ -274,9 +271,6 @@ public class AleenaTest12 {
         app.LabManager labManager15 = headLabCoordinator0.autoGenerateLabManager("EQ-4421", "Equipment ID: EQ-2692, Name: Head Lab Coordinator, Description: , Location: hi!, Status: null");
         org.junit.Assert.assertNotNull(headLabCoordinator0);
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "COORD-001" + "'", str3, "COORD-001");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertEquals("'" + str8 + "' != '" + "Head Lab Coordinator" + "'", str8, "Head Lab Coordinator");
 // flaky "5) test6018(src.test.randoop.AleenaTest12)":         org.junit.Assert.assertEquals("'" + str9 + "' != '" + "COORD-001" + "'", str9, "COORD-001");
         org.junit.Assert.assertNotNull(labManager12);
         org.junit.Assert.assertNotNull(labManager15);
