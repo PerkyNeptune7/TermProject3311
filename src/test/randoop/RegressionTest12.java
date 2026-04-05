@@ -1,4 +1,4 @@
-package src.test.randoop;
+package test.randoop;
 
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -24,7 +24,7 @@ public class RegressionTest12 {
     public void test06001() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06001");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 1);
@@ -49,7 +49,7 @@ public class RegressionTest12 {
     public void test06002() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06002");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(15.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) ' ');
@@ -62,7 +62,7 @@ public class RegressionTest12 {
     public void test06003() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06003");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(20.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 'a');
@@ -81,7 +81,7 @@ public class RegressionTest12 {
     public void test06004() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06004");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -102,7 +102,7 @@ public class RegressionTest12 {
     public void test06005() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06005");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -125,7 +125,7 @@ public class RegressionTest12 {
     public void test06006() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06006");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -146,7 +146,7 @@ public class RegressionTest12 {
     public void test06007() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06007");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -169,7 +169,7 @@ public class RegressionTest12 {
     public void test06008() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06008");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -190,7 +190,7 @@ public class RegressionTest12 {
     public void test06009() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06009");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(20.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -205,7 +205,7 @@ public class RegressionTest12 {
     public void test06010() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06010");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -222,7 +222,7 @@ public class RegressionTest12 {
     public void test06011() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06011");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (-1));
@@ -249,7 +249,7 @@ public class RegressionTest12 {
     public void test06012() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06012");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0);
         java.lang.String str6 = institutionalPayment0.processPayment(0.0d);
@@ -266,7 +266,7 @@ public class RegressionTest12 {
     public void test06013() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06013");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -291,7 +291,7 @@ public class RegressionTest12 {
     public void test06014() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06014");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -312,7 +312,7 @@ public class RegressionTest12 {
     public void test06015() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06015");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -365,7 +365,7 @@ public class RegressionTest12 {
     public void test06016() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06016");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 10);
@@ -382,7 +382,7 @@ public class RegressionTest12 {
     public void test06017() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06017");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -407,7 +407,7 @@ public class RegressionTest12 {
     public void test06018() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06018");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 1);
@@ -432,7 +432,7 @@ public class RegressionTest12 {
     public void test06019() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06019");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -475,7 +475,7 @@ public class RegressionTest12 {
     public void test06020() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06020");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 100);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100L);
@@ -490,7 +490,7 @@ public class RegressionTest12 {
     public void test06021() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06021");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) ' ');
@@ -511,7 +511,7 @@ public class RegressionTest12 {
     public void test06022() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06022");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(20.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 'a');
@@ -528,7 +528,7 @@ public class RegressionTest12 {
     public void test06023() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06023");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) 10L);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -545,7 +545,7 @@ public class RegressionTest12 {
     public void test06024() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06024");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -576,7 +576,7 @@ public class RegressionTest12 {
     public void test06025() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06025");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (byte) 10);
@@ -595,7 +595,7 @@ public class RegressionTest12 {
     public void test06026() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06026");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 100);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) -1);
@@ -616,7 +616,7 @@ public class RegressionTest12 {
     public void test06027() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06027");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -647,7 +647,7 @@ public class RegressionTest12 {
     public void test06028() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06028");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -668,7 +668,7 @@ public class RegressionTest12 {
     public void test06029() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06029");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -689,7 +689,7 @@ public class RegressionTest12 {
     public void test06030() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06030");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -712,7 +712,7 @@ public class RegressionTest12 {
     public void test06031() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06031");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -737,7 +737,7 @@ public class RegressionTest12 {
     public void test06032() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06032");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = institutionalPayment0.processPayment((double) ' ');
@@ -756,7 +756,7 @@ public class RegressionTest12 {
     public void test06033() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06033");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -783,7 +783,7 @@ public class RegressionTest12 {
     public void test06034() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06034");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -810,7 +810,7 @@ public class RegressionTest12 {
     public void test06035() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06035");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -843,7 +843,7 @@ public class RegressionTest12 {
     public void test06036() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06036");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -874,7 +874,7 @@ public class RegressionTest12 {
     public void test06037() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06037");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -901,7 +901,7 @@ public class RegressionTest12 {
     public void test06038() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06038");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -930,7 +930,7 @@ public class RegressionTest12 {
     public void test06039() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06039");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -961,7 +961,7 @@ public class RegressionTest12 {
     public void test06040() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06040");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -988,7 +988,7 @@ public class RegressionTest12 {
     public void test06041() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06041");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -1019,7 +1019,7 @@ public class RegressionTest12 {
     public void test06042() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06042");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -1044,7 +1044,7 @@ public class RegressionTest12 {
     public void test06043() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06043");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -1067,7 +1067,7 @@ public class RegressionTest12 {
     public void test06044() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06044");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment(0.0d);
@@ -1092,7 +1092,7 @@ public class RegressionTest12 {
     public void test06045() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06045");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (-1L));
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100);
@@ -1109,7 +1109,7 @@ public class RegressionTest12 {
     public void test06046() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06046");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -1140,7 +1140,7 @@ public class RegressionTest12 {
     public void test06047() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06047");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 1);
@@ -1159,7 +1159,7 @@ public class RegressionTest12 {
     public void test06048() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06048");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -1194,7 +1194,7 @@ public class RegressionTest12 {
     public void test06049() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06049");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -1223,7 +1223,7 @@ public class RegressionTest12 {
     public void test06050() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06050");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -1258,7 +1258,7 @@ public class RegressionTest12 {
     public void test06051() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06051");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -1293,7 +1293,7 @@ public class RegressionTest12 {
     public void test06052() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06052");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 0L);
@@ -1318,7 +1318,7 @@ public class RegressionTest12 {
     public void test06053() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06053");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10L);
@@ -1341,7 +1341,7 @@ public class RegressionTest12 {
     public void test06054() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06054");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -1372,7 +1372,7 @@ public class RegressionTest12 {
     public void test06055() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06055");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -1395,7 +1395,7 @@ public class RegressionTest12 {
     public void test06056() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06056");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1L));
@@ -1418,7 +1418,7 @@ public class RegressionTest12 {
     public void test06057() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06057");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (byte) 10);
@@ -1439,7 +1439,7 @@ public class RegressionTest12 {
     public void test06058() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06058");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -1466,7 +1466,7 @@ public class RegressionTest12 {
     public void test06059() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06059");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -1489,7 +1489,7 @@ public class RegressionTest12 {
     public void test06060() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06060");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -1520,7 +1520,7 @@ public class RegressionTest12 {
     public void test06061() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06061");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment(20.0d);
@@ -1543,7 +1543,7 @@ public class RegressionTest12 {
     public void test06062() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06062");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -1564,7 +1564,7 @@ public class RegressionTest12 {
     public void test06063() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06063");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -1605,7 +1605,7 @@ public class RegressionTest12 {
     public void test06064() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06064");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = creditCardPayment0.processPayment(0.0d);
@@ -1624,7 +1624,7 @@ public class RegressionTest12 {
     public void test06065() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06065");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -1645,7 +1645,7 @@ public class RegressionTest12 {
     public void test06066() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06066");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -1694,7 +1694,7 @@ public class RegressionTest12 {
     public void test06067() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06067");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str6 = debitCardPayment0.processPayment(0.0d);
@@ -1711,7 +1711,7 @@ public class RegressionTest12 {
     public void test06068() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06068");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -1732,7 +1732,7 @@ public class RegressionTest12 {
     public void test06069() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06069");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -1781,7 +1781,7 @@ public class RegressionTest12 {
     public void test06070() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06070");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -1808,7 +1808,7 @@ public class RegressionTest12 {
     public void test06071() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06071");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -1835,7 +1835,7 @@ public class RegressionTest12 {
     public void test06072() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06072");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -1868,7 +1868,7 @@ public class RegressionTest12 {
     public void test06073() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06073");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 100);
@@ -1893,7 +1893,7 @@ public class RegressionTest12 {
     public void test06074() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06074");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -1920,7 +1920,7 @@ public class RegressionTest12 {
     public void test06075() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06075");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 100L);
@@ -1939,7 +1939,7 @@ public class RegressionTest12 {
     public void test06076() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06076");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100);
@@ -1964,7 +1964,7 @@ public class RegressionTest12 {
     public void test06077() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06077");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment(1.0d);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -1979,7 +1979,7 @@ public class RegressionTest12 {
     public void test06078() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06078");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -2020,7 +2020,7 @@ public class RegressionTest12 {
     public void test06079() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06079");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -2051,7 +2051,7 @@ public class RegressionTest12 {
     public void test06080() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06080");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment(100.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1));
@@ -2072,7 +2072,7 @@ public class RegressionTest12 {
     public void test06081() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06081");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100L);
@@ -2099,7 +2099,7 @@ public class RegressionTest12 {
     public void test06082() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06082");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -2130,7 +2130,7 @@ public class RegressionTest12 {
     public void test06083() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06083");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -2153,7 +2153,7 @@ public class RegressionTest12 {
     public void test06084() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06084");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -2188,7 +2188,7 @@ public class RegressionTest12 {
     public void test06085() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06085");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment((double) 10L);
         java.lang.String str4 = grantPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 10);
@@ -2205,7 +2205,7 @@ public class RegressionTest12 {
     public void test06086() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06086");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment(30.0d);
@@ -2228,7 +2228,7 @@ public class RegressionTest12 {
     public void test06087() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06087");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -2257,7 +2257,7 @@ public class RegressionTest12 {
     public void test06088() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06088");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 0L);
@@ -2284,7 +2284,7 @@ public class RegressionTest12 {
     public void test06089() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06089");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 100);
@@ -2313,7 +2313,7 @@ public class RegressionTest12 {
     public void test06090() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06090");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -2332,7 +2332,7 @@ public class RegressionTest12 {
     public void test06091() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06091");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) 10L);
         java.lang.String str6 = debitCardPayment0.processPayment(1.0d);
@@ -2357,7 +2357,7 @@ public class RegressionTest12 {
     public void test06092() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06092");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 0);
@@ -2374,7 +2374,7 @@ public class RegressionTest12 {
     public void test06093() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06093");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1.0f);
@@ -2395,7 +2395,7 @@ public class RegressionTest12 {
     public void test06094() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06094");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -2422,7 +2422,7 @@ public class RegressionTest12 {
     public void test06095() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06095");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -2445,7 +2445,7 @@ public class RegressionTest12 {
     public void test06096() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06096");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100L);
@@ -2466,7 +2466,7 @@ public class RegressionTest12 {
     public void test06097() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06097");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -2491,7 +2491,7 @@ public class RegressionTest12 {
     public void test06098() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06098");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 'a');
@@ -2510,7 +2510,7 @@ public class RegressionTest12 {
     public void test06099() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06099");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -2531,7 +2531,7 @@ public class RegressionTest12 {
     public void test06100() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06100");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -2560,7 +2560,7 @@ public class RegressionTest12 {
     public void test06101() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06101");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment(30.0d);
@@ -2583,7 +2583,7 @@ public class RegressionTest12 {
     public void test06102() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06102");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = institutionalPayment0.processPayment(1.0d);
@@ -2608,7 +2608,7 @@ public class RegressionTest12 {
     public void test06103() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06103");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -2645,7 +2645,7 @@ public class RegressionTest12 {
     public void test06104() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06104");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -2668,7 +2668,7 @@ public class RegressionTest12 {
     public void test06105() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06105");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment(30.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100.0f);
@@ -2687,7 +2687,7 @@ public class RegressionTest12 {
     public void test06106() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06106");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 10);
@@ -2708,7 +2708,7 @@ public class RegressionTest12 {
     public void test06107() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06107");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment(0.0d);
         java.lang.String str6 = debitCardPayment0.processPayment((double) ' ');
@@ -2727,7 +2727,7 @@ public class RegressionTest12 {
     public void test06108() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06108");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -2746,7 +2746,7 @@ public class RegressionTest12 {
     public void test06109() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06109");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -2779,7 +2779,7 @@ public class RegressionTest12 {
     public void test06110() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06110");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 10);
@@ -2794,7 +2794,7 @@ public class RegressionTest12 {
     public void test06111() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06111");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -2817,7 +2817,7 @@ public class RegressionTest12 {
     public void test06112() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06112");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -2844,7 +2844,7 @@ public class RegressionTest12 {
     public void test06113() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06113");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -2863,7 +2863,7 @@ public class RegressionTest12 {
     public void test06114() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06114");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 0.0f);
@@ -2884,7 +2884,7 @@ public class RegressionTest12 {
     public void test06115() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06115");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -2929,7 +2929,7 @@ public class RegressionTest12 {
     public void test06116() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06116");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -2950,7 +2950,7 @@ public class RegressionTest12 {
     public void test06117() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06117");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) 100);
         java.lang.String str4 = institutionalPayment0.processPayment(30.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 0.0f);
@@ -2981,7 +2981,7 @@ public class RegressionTest12 {
     public void test06118() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06118");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -3004,7 +3004,7 @@ public class RegressionTest12 {
     public void test06119() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06119");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -3051,7 +3051,7 @@ public class RegressionTest12 {
     public void test06120() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06120");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -3078,7 +3078,7 @@ public class RegressionTest12 {
     public void test06121() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06121");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -3103,7 +3103,7 @@ public class RegressionTest12 {
     public void test06122() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06122");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -3136,7 +3136,7 @@ public class RegressionTest12 {
     public void test06123() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06123");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) '4');
@@ -3167,7 +3167,7 @@ public class RegressionTest12 {
     public void test06124() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06124");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -3188,7 +3188,7 @@ public class RegressionTest12 {
     public void test06125() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06125");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -3211,7 +3211,7 @@ public class RegressionTest12 {
     public void test06126() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06126");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment(10.0d);
@@ -3234,7 +3234,7 @@ public class RegressionTest12 {
     public void test06127() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06127");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -3261,7 +3261,7 @@ public class RegressionTest12 {
     public void test06128() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06128");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 100L);
@@ -3288,7 +3288,7 @@ public class RegressionTest12 {
     public void test06129() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06129");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -3309,7 +3309,7 @@ public class RegressionTest12 {
     public void test06130() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06130");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 10);
@@ -3330,7 +3330,7 @@ public class RegressionTest12 {
     public void test06131() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06131");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 100);
@@ -3349,7 +3349,7 @@ public class RegressionTest12 {
     public void test06132() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06132");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -3376,7 +3376,7 @@ public class RegressionTest12 {
     public void test06133() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06133");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -3417,7 +3417,7 @@ public class RegressionTest12 {
     public void test06134() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06134");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -3448,7 +3448,7 @@ public class RegressionTest12 {
     public void test06135() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06135");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment(0.0d);
         java.lang.String str6 = debitCardPayment0.processPayment((double) ' ');
@@ -3467,7 +3467,7 @@ public class RegressionTest12 {
     public void test06136() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06136");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -3496,7 +3496,7 @@ public class RegressionTest12 {
     public void test06137() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06137");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 10L);
         java.lang.String str4 = institutionalPayment0.processPayment(10.0d);
         java.lang.String str6 = institutionalPayment0.processPayment(1.0d);
@@ -3515,7 +3515,7 @@ public class RegressionTest12 {
     public void test06138() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06138");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -3550,7 +3550,7 @@ public class RegressionTest12 {
     public void test06139() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06139");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0);
@@ -3571,7 +3571,7 @@ public class RegressionTest12 {
     public void test06140() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06140");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -3610,7 +3610,7 @@ public class RegressionTest12 {
     public void test06141() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06141");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -3633,7 +3633,7 @@ public class RegressionTest12 {
     public void test06142() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06142");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) '4');
@@ -3652,7 +3652,7 @@ public class RegressionTest12 {
     public void test06143() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06143");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) 0);
@@ -3667,7 +3667,7 @@ public class RegressionTest12 {
     public void test06144() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06144");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -3690,7 +3690,7 @@ public class RegressionTest12 {
     public void test06145() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06145");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment(10.0d);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -3709,7 +3709,7 @@ public class RegressionTest12 {
     public void test06146() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06146");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) 100);
@@ -3730,7 +3730,7 @@ public class RegressionTest12 {
     public void test06147() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06147");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -3755,7 +3755,7 @@ public class RegressionTest12 {
     public void test06148() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06148");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -3800,7 +3800,7 @@ public class RegressionTest12 {
     public void test06149() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06149");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -3825,7 +3825,7 @@ public class RegressionTest12 {
     public void test06150() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06150");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = institutionalPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = institutionalPayment0.processPayment(20.0d);
@@ -3842,7 +3842,7 @@ public class RegressionTest12 {
     public void test06151() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06151");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -3865,7 +3865,7 @@ public class RegressionTest12 {
     public void test06152() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06152");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = creditCardPayment0.processPayment(20.0d);
@@ -3882,7 +3882,7 @@ public class RegressionTest12 {
     public void test06153() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06153");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 100L);
@@ -3903,7 +3903,7 @@ public class RegressionTest12 {
     public void test06154() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06154");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100L);
@@ -3926,7 +3926,7 @@ public class RegressionTest12 {
     public void test06155() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06155");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 100L);
@@ -3951,7 +3951,7 @@ public class RegressionTest12 {
     public void test06156() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06156");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -3972,7 +3972,7 @@ public class RegressionTest12 {
     public void test06157() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06157");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 1);
@@ -3991,7 +3991,7 @@ public class RegressionTest12 {
     public void test06158() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06158");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -4014,7 +4014,7 @@ public class RegressionTest12 {
     public void test06159() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06159");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment(100.0d);
@@ -4039,7 +4039,7 @@ public class RegressionTest12 {
     public void test06160() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06160");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -4080,7 +4080,7 @@ public class RegressionTest12 {
     public void test06161() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06161");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -4121,7 +4121,7 @@ public class RegressionTest12 {
     public void test06162() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06162");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -4146,7 +4146,7 @@ public class RegressionTest12 {
     public void test06163() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06163");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -4185,7 +4185,7 @@ public class RegressionTest12 {
     public void test06164() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06164");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(20.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 'a');
@@ -4206,7 +4206,7 @@ public class RegressionTest12 {
     public void test06165() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06165");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -4231,7 +4231,7 @@ public class RegressionTest12 {
     public void test06166() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06166");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -4262,7 +4262,7 @@ public class RegressionTest12 {
     public void test06167() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06167");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -4301,7 +4301,7 @@ public class RegressionTest12 {
     public void test06168() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06168");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -4328,7 +4328,7 @@ public class RegressionTest12 {
     public void test06169() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06169");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment(100.0d);
@@ -4347,7 +4347,7 @@ public class RegressionTest12 {
     public void test06170() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06170");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -4374,7 +4374,7 @@ public class RegressionTest12 {
     public void test06171() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06171");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10L);
@@ -4393,7 +4393,7 @@ public class RegressionTest12 {
     public void test06172() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06172");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10);
@@ -4418,7 +4418,7 @@ public class RegressionTest12 {
     public void test06173() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06173");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -4439,7 +4439,7 @@ public class RegressionTest12 {
     public void test06174() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06174");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 10);
@@ -4464,7 +4464,7 @@ public class RegressionTest12 {
     public void test06175() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06175");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 10);
@@ -4485,7 +4485,7 @@ public class RegressionTest12 {
     public void test06176() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06176");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -4508,7 +4508,7 @@ public class RegressionTest12 {
     public void test06177() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06177");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = institutionalPayment0.processPayment((double) ' ');
@@ -4531,7 +4531,7 @@ public class RegressionTest12 {
     public void test06178() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06178");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) 0);
@@ -4550,7 +4550,7 @@ public class RegressionTest12 {
     public void test06179() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06179");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -4579,7 +4579,7 @@ public class RegressionTest12 {
     public void test06180() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06180");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (byte) 100);
@@ -4596,7 +4596,7 @@ public class RegressionTest12 {
     public void test06181() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06181");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1L));
@@ -4621,7 +4621,7 @@ public class RegressionTest12 {
     public void test06182() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06182");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -4646,7 +4646,7 @@ public class RegressionTest12 {
     public void test06183() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06183");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) -1);
@@ -4665,7 +4665,7 @@ public class RegressionTest12 {
     public void test06184() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06184");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -4692,7 +4692,7 @@ public class RegressionTest12 {
     public void test06185() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06185");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(20.0d);
         java.lang.String str4 = grantPayment0.processPayment(0.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 100);
@@ -4709,7 +4709,7 @@ public class RegressionTest12 {
     public void test06186() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06186");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -4732,7 +4732,7 @@ public class RegressionTest12 {
     public void test06187() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06187");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = debitCardPayment0.processPayment(100.0d);
@@ -4745,7 +4745,7 @@ public class RegressionTest12 {
     public void test06188() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06188");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) 100);
         java.lang.String str4 = institutionalPayment0.processPayment(30.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100.0f);
@@ -4770,7 +4770,7 @@ public class RegressionTest12 {
     public void test06189() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06189");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -4793,7 +4793,7 @@ public class RegressionTest12 {
     public void test06190() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06190");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment(20.0d);
@@ -4814,7 +4814,7 @@ public class RegressionTest12 {
     public void test06191() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06191");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -4859,7 +4859,7 @@ public class RegressionTest12 {
     public void test06192() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06192");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -4892,7 +4892,7 @@ public class RegressionTest12 {
     public void test06193() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06193");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -4931,7 +4931,7 @@ public class RegressionTest12 {
     public void test06194() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06194");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -4970,7 +4970,7 @@ public class RegressionTest12 {
     public void test06195() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06195");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -4991,7 +4991,7 @@ public class RegressionTest12 {
     public void test06196() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06196");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -5028,7 +5028,7 @@ public class RegressionTest12 {
     public void test06197() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06197");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -5055,7 +5055,7 @@ public class RegressionTest12 {
     public void test06198() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06198");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -5076,7 +5076,7 @@ public class RegressionTest12 {
     public void test06199() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06199");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(20.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) ' ');
@@ -5097,7 +5097,7 @@ public class RegressionTest12 {
     public void test06200() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06200");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 100);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100L);
@@ -5114,7 +5114,7 @@ public class RegressionTest12 {
     public void test06201() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06201");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 100);
@@ -5135,7 +5135,7 @@ public class RegressionTest12 {
     public void test06202() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06202");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -5180,7 +5180,7 @@ public class RegressionTest12 {
     public void test06203() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06203");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -5205,7 +5205,7 @@ public class RegressionTest12 {
     public void test06204() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06204");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0L);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1.0f);
@@ -5228,7 +5228,7 @@ public class RegressionTest12 {
     public void test06205() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06205");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -5253,7 +5253,7 @@ public class RegressionTest12 {
     public void test06206() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06206");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -5296,7 +5296,7 @@ public class RegressionTest12 {
     public void test06207() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06207");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -5339,7 +5339,7 @@ public class RegressionTest12 {
     public void test06208() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06208");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -5362,7 +5362,7 @@ public class RegressionTest12 {
     public void test06209() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06209");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -5383,7 +5383,7 @@ public class RegressionTest12 {
     public void test06210() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06210");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 1);
@@ -5406,7 +5406,7 @@ public class RegressionTest12 {
     public void test06211() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06211");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1L));
@@ -5433,7 +5433,7 @@ public class RegressionTest12 {
     public void test06212() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06212");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -5456,7 +5456,7 @@ public class RegressionTest12 {
     public void test06213() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06213");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -5481,7 +5481,7 @@ public class RegressionTest12 {
     public void test06214() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06214");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 10);
@@ -5508,7 +5508,7 @@ public class RegressionTest12 {
     public void test06215() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06215");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100L);
@@ -5529,7 +5529,7 @@ public class RegressionTest12 {
     public void test06216() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06216");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment((double) 10L);
         java.lang.String str4 = grantPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = grantPayment0.processPayment((double) 0);
@@ -5542,7 +5542,7 @@ public class RegressionTest12 {
     public void test06217() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06217");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 100);
@@ -5569,7 +5569,7 @@ public class RegressionTest12 {
     public void test06218() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06218");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -5602,7 +5602,7 @@ public class RegressionTest12 {
     public void test06219() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06219");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1.0f));
@@ -5627,7 +5627,7 @@ public class RegressionTest12 {
     public void test06220() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06220");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment(30.0d);
@@ -5650,7 +5650,7 @@ public class RegressionTest12 {
     public void test06221() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06221");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -5673,7 +5673,7 @@ public class RegressionTest12 {
     public void test06222() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06222");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -5696,7 +5696,7 @@ public class RegressionTest12 {
     public void test06223() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06223");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 0);
@@ -5719,7 +5719,7 @@ public class RegressionTest12 {
     public void test06224() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06224");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -5746,7 +5746,7 @@ public class RegressionTest12 {
     public void test06225() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06225");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -5779,7 +5779,7 @@ public class RegressionTest12 {
     public void test06226() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06226");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -5800,7 +5800,7 @@ public class RegressionTest12 {
     public void test06227() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06227");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) '4');
@@ -5827,7 +5827,7 @@ public class RegressionTest12 {
     public void test06228() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06228");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -5860,7 +5860,7 @@ public class RegressionTest12 {
     public void test06229() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06229");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (-1));
@@ -5891,7 +5891,7 @@ public class RegressionTest12 {
     public void test06230() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06230");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -5920,7 +5920,7 @@ public class RegressionTest12 {
     public void test06231() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06231");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -5945,7 +5945,7 @@ public class RegressionTest12 {
     public void test06232() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06232");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((-1.0d));
@@ -5970,7 +5970,7 @@ public class RegressionTest12 {
     public void test06233() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06233");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment(30.0d);
@@ -5997,7 +5997,7 @@ public class RegressionTest12 {
     public void test06234() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06234");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -6020,7 +6020,7 @@ public class RegressionTest12 {
     public void test06235() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06235");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = debitCardPayment0.processPayment((-1.0d));
@@ -6037,7 +6037,7 @@ public class RegressionTest12 {
     public void test06236() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06236");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -6070,7 +6070,7 @@ public class RegressionTest12 {
     public void test06237() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06237");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -6099,7 +6099,7 @@ public class RegressionTest12 {
     public void test06238() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06238");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -6144,7 +6144,7 @@ public class RegressionTest12 {
     public void test06239() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06239");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -6169,7 +6169,7 @@ public class RegressionTest12 {
     public void test06240() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06240");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0);
@@ -6188,7 +6188,7 @@ public class RegressionTest12 {
     public void test06241() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06241");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -6215,7 +6215,7 @@ public class RegressionTest12 {
     public void test06242() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06242");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -6246,7 +6246,7 @@ public class RegressionTest12 {
     public void test06243() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06243");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -6269,7 +6269,7 @@ public class RegressionTest12 {
     public void test06244() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06244");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -6302,7 +6302,7 @@ public class RegressionTest12 {
     public void test06245() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06245");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -6323,7 +6323,7 @@ public class RegressionTest12 {
     public void test06246() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06246");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) -1);
@@ -6344,7 +6344,7 @@ public class RegressionTest12 {
     public void test06247() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06247");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -6369,7 +6369,7 @@ public class RegressionTest12 {
     public void test06248() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06248");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment(100.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 0.0f);
@@ -6390,7 +6390,7 @@ public class RegressionTest12 {
     public void test06249() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06249");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -6411,7 +6411,7 @@ public class RegressionTest12 {
     public void test06250() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06250");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -6444,7 +6444,7 @@ public class RegressionTest12 {
     public void test06251() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06251");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -6469,7 +6469,7 @@ public class RegressionTest12 {
     public void test06252() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06252");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) 10);
@@ -6492,7 +6492,7 @@ public class RegressionTest12 {
     public void test06253() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06253");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -6519,7 +6519,7 @@ public class RegressionTest12 {
     public void test06254() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06254");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment(30.0d);
@@ -6542,7 +6542,7 @@ public class RegressionTest12 {
     public void test06255() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06255");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -6587,7 +6587,7 @@ public class RegressionTest12 {
     public void test06256() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06256");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -6608,7 +6608,7 @@ public class RegressionTest12 {
     public void test06257() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06257");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -6639,7 +6639,7 @@ public class RegressionTest12 {
     public void test06258() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06258");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -6680,7 +6680,7 @@ public class RegressionTest12 {
     public void test06259() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06259");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -6705,7 +6705,7 @@ public class RegressionTest12 {
     public void test06260() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06260");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -6732,7 +6732,7 @@ public class RegressionTest12 {
     public void test06261() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06261");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -6755,7 +6755,7 @@ public class RegressionTest12 {
     public void test06262() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06262");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment(10.0d);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -6770,7 +6770,7 @@ public class RegressionTest12 {
     public void test06263() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06263");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -6793,7 +6793,7 @@ public class RegressionTest12 {
     public void test06264() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06264");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -6820,7 +6820,7 @@ public class RegressionTest12 {
     public void test06265() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06265");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -6849,7 +6849,7 @@ public class RegressionTest12 {
     public void test06266() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06266");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -6874,7 +6874,7 @@ public class RegressionTest12 {
     public void test06267() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06267");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -6891,7 +6891,7 @@ public class RegressionTest12 {
     public void test06268() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06268");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment(30.0d);
@@ -6908,7 +6908,7 @@ public class RegressionTest12 {
     public void test06269() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06269");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100L);
@@ -6931,7 +6931,7 @@ public class RegressionTest12 {
     public void test06270() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06270");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0);
@@ -6954,7 +6954,7 @@ public class RegressionTest12 {
     public void test06271() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06271");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) 100);
         java.lang.String str4 = institutionalPayment0.processPayment(30.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 0.0f);
@@ -6979,7 +6979,7 @@ public class RegressionTest12 {
     public void test06272() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06272");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -7004,7 +7004,7 @@ public class RegressionTest12 {
     public void test06273() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06273");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -7033,7 +7033,7 @@ public class RegressionTest12 {
     public void test06274() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06274");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 10L);
         java.lang.String str4 = institutionalPayment0.processPayment(10.0d);
         java.lang.String str6 = institutionalPayment0.processPayment(1.0d);
@@ -7050,7 +7050,7 @@ public class RegressionTest12 {
     public void test06275() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06275");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) 10);
@@ -7075,7 +7075,7 @@ public class RegressionTest12 {
     public void test06276() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06276");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -7118,7 +7118,7 @@ public class RegressionTest12 {
     public void test06277() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06277");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 100);
@@ -7143,7 +7143,7 @@ public class RegressionTest12 {
     public void test06278() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06278");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 100);
@@ -7164,7 +7164,7 @@ public class RegressionTest12 {
     public void test06279() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06279");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -7189,7 +7189,7 @@ public class RegressionTest12 {
     public void test06280() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06280");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -7214,7 +7214,7 @@ public class RegressionTest12 {
     public void test06281() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06281");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 100);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -7241,7 +7241,7 @@ public class RegressionTest12 {
     public void test06282() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06282");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 100);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 1);
@@ -7256,7 +7256,7 @@ public class RegressionTest12 {
     public void test06283() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06283");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -7303,7 +7303,7 @@ public class RegressionTest12 {
     public void test06284() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06284");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -7352,7 +7352,7 @@ public class RegressionTest12 {
     public void test06285() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06285");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 100);
@@ -7367,7 +7367,7 @@ public class RegressionTest12 {
     public void test06286() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06286");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -7392,7 +7392,7 @@ public class RegressionTest12 {
     public void test06287() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06287");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -7419,7 +7419,7 @@ public class RegressionTest12 {
     public void test06288() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06288");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 'a');
@@ -7442,7 +7442,7 @@ public class RegressionTest12 {
     public void test06289() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06289");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -7485,7 +7485,7 @@ public class RegressionTest12 {
     public void test06290() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06290");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -7510,7 +7510,7 @@ public class RegressionTest12 {
     public void test06291() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06291");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -7549,7 +7549,7 @@ public class RegressionTest12 {
     public void test06292() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06292");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10L);
@@ -7574,7 +7574,7 @@ public class RegressionTest12 {
     public void test06293() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06293");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -7597,7 +7597,7 @@ public class RegressionTest12 {
     public void test06294() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06294");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment((double) 0.0f);
         java.lang.String str4 = grantPayment0.processPayment((double) ' ');
         java.lang.String str6 = grantPayment0.processPayment(20.0d);
@@ -7610,7 +7610,7 @@ public class RegressionTest12 {
     public void test06295() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06295");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -7633,7 +7633,7 @@ public class RegressionTest12 {
     public void test06296() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06296");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = institutionalPayment0.processPayment((double) ' ');
@@ -7656,7 +7656,7 @@ public class RegressionTest12 {
     public void test06297() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06297");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -7681,7 +7681,7 @@ public class RegressionTest12 {
     public void test06298() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06298");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -7704,7 +7704,7 @@ public class RegressionTest12 {
     public void test06299() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06299");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -7727,7 +7727,7 @@ public class RegressionTest12 {
     public void test06300() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06300");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -7768,7 +7768,7 @@ public class RegressionTest12 {
     public void test06301() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06301");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) '4');
@@ -7789,7 +7789,7 @@ public class RegressionTest12 {
     public void test06302() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06302");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = debitCardPayment0.processPayment((-1.0d));
@@ -7810,7 +7810,7 @@ public class RegressionTest12 {
     public void test06303() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06303");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(20.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -7829,7 +7829,7 @@ public class RegressionTest12 {
     public void test06304() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06304");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -7874,7 +7874,7 @@ public class RegressionTest12 {
     public void test06305() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06305");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -7911,7 +7911,7 @@ public class RegressionTest12 {
     public void test06306() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06306");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (-1.0f));
         java.lang.String str6 = institutionalPayment0.processPayment((double) '4');
@@ -7926,7 +7926,7 @@ public class RegressionTest12 {
     public void test06307() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06307");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -7951,7 +7951,7 @@ public class RegressionTest12 {
     public void test06308() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06308");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -7996,7 +7996,7 @@ public class RegressionTest12 {
     public void test06309() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06309");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -8037,7 +8037,7 @@ public class RegressionTest12 {
     public void test06310() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06310");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -8060,7 +8060,7 @@ public class RegressionTest12 {
     public void test06311() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06311");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 10);
@@ -8087,7 +8087,7 @@ public class RegressionTest12 {
     public void test06312() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06312");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment((double) 0.0f);
         java.lang.String str4 = grantPayment0.processPayment((double) ' ');
         java.lang.String str6 = grantPayment0.processPayment((double) 0);
@@ -8108,7 +8108,7 @@ public class RegressionTest12 {
     public void test06313() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06313");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -8157,7 +8157,7 @@ public class RegressionTest12 {
     public void test06314() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06314");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -8190,7 +8190,7 @@ public class RegressionTest12 {
     public void test06315() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06315");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -8239,7 +8239,7 @@ public class RegressionTest12 {
     public void test06316() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06316");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment((double) 0.0f);
         java.lang.String str4 = grantPayment0.processPayment((double) 'a');
         java.lang.String str6 = grantPayment0.processPayment(1.0d);
@@ -8256,7 +8256,7 @@ public class RegressionTest12 {
     public void test06317() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06317");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) 100);
         java.lang.String str4 = institutionalPayment0.processPayment(30.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100.0f);
@@ -8289,7 +8289,7 @@ public class RegressionTest12 {
     public void test06318() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06318");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -8314,7 +8314,7 @@ public class RegressionTest12 {
     public void test06319() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06319");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 100);
@@ -8331,7 +8331,7 @@ public class RegressionTest12 {
     public void test06320() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06320");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 1);
@@ -8350,7 +8350,7 @@ public class RegressionTest12 {
     public void test06321() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06321");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100);
@@ -8383,7 +8383,7 @@ public class RegressionTest12 {
     public void test06322() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06322");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -8404,7 +8404,7 @@ public class RegressionTest12 {
     public void test06323() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06323");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -8435,7 +8435,7 @@ public class RegressionTest12 {
     public void test06324() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06324");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 100L);
@@ -8466,7 +8466,7 @@ public class RegressionTest12 {
     public void test06325() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06325");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (byte) 10);
@@ -8487,7 +8487,7 @@ public class RegressionTest12 {
     public void test06326() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06326");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -8524,7 +8524,7 @@ public class RegressionTest12 {
     public void test06327() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06327");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -8555,7 +8555,7 @@ public class RegressionTest12 {
     public void test06328() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06328");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) -1);
@@ -8572,7 +8572,7 @@ public class RegressionTest12 {
     public void test06329() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06329");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -8611,7 +8611,7 @@ public class RegressionTest12 {
     public void test06330() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06330");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (-1));
@@ -8630,7 +8630,7 @@ public class RegressionTest12 {
     public void test06331() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06331");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100.0f);
@@ -8655,7 +8655,7 @@ public class RegressionTest12 {
     public void test06332() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06332");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -8678,7 +8678,7 @@ public class RegressionTest12 {
     public void test06333() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06333");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -8709,7 +8709,7 @@ public class RegressionTest12 {
     public void test06334() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06334");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0);
@@ -8730,7 +8730,7 @@ public class RegressionTest12 {
     public void test06335() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06335");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 1);
@@ -8749,7 +8749,7 @@ public class RegressionTest12 {
     public void test06336() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06336");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -8776,7 +8776,7 @@ public class RegressionTest12 {
     public void test06337() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06337");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -8801,7 +8801,7 @@ public class RegressionTest12 {
     public void test06338() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06338");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -8826,7 +8826,7 @@ public class RegressionTest12 {
     public void test06339() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06339");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100L);
@@ -8855,7 +8855,7 @@ public class RegressionTest12 {
     public void test06340() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06340");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -8908,7 +8908,7 @@ public class RegressionTest12 {
     public void test06341() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06341");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) -1);
@@ -8929,7 +8929,7 @@ public class RegressionTest12 {
     public void test06342() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06342");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -8964,7 +8964,7 @@ public class RegressionTest12 {
     public void test06343() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06343");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 10);
@@ -8987,7 +8987,7 @@ public class RegressionTest12 {
     public void test06344() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06344");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment(0.0d);
@@ -9008,7 +9008,7 @@ public class RegressionTest12 {
     public void test06345() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06345");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -9039,7 +9039,7 @@ public class RegressionTest12 {
     public void test06346() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06346");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -9080,7 +9080,7 @@ public class RegressionTest12 {
     public void test06347() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06347");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) ' ');
@@ -9097,7 +9097,7 @@ public class RegressionTest12 {
     public void test06348() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06348");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment(20.0d);
@@ -9120,7 +9120,7 @@ public class RegressionTest12 {
     public void test06349() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06349");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -9143,7 +9143,7 @@ public class RegressionTest12 {
     public void test06350() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06350");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -9160,7 +9160,7 @@ public class RegressionTest12 {
     public void test06351() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06351");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -9203,7 +9203,7 @@ public class RegressionTest12 {
     public void test06352() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06352");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -9224,7 +9224,7 @@ public class RegressionTest12 {
     public void test06353() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06353");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0);
@@ -9245,7 +9245,7 @@ public class RegressionTest12 {
     public void test06354() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06354");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -9298,7 +9298,7 @@ public class RegressionTest12 {
     public void test06355() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06355");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -9317,7 +9317,7 @@ public class RegressionTest12 {
     public void test06356() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06356");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 10);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (byte) 10);
@@ -9334,7 +9334,7 @@ public class RegressionTest12 {
     public void test06357() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06357");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -9355,7 +9355,7 @@ public class RegressionTest12 {
     public void test06358() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06358");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment(100.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1));
@@ -9380,7 +9380,7 @@ public class RegressionTest12 {
     public void test06359() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06359");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -9409,7 +9409,7 @@ public class RegressionTest12 {
     public void test06360() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06360");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) 0.0f);
@@ -9432,7 +9432,7 @@ public class RegressionTest12 {
     public void test06361() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06361");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 100);
@@ -9455,7 +9455,7 @@ public class RegressionTest12 {
     public void test06362() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06362");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment(10.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 100L);
@@ -9480,7 +9480,7 @@ public class RegressionTest12 {
     public void test06363() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06363");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -9511,7 +9511,7 @@ public class RegressionTest12 {
     public void test06364() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06364");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -9538,7 +9538,7 @@ public class RegressionTest12 {
     public void test06365() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06365");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -9557,7 +9557,7 @@ public class RegressionTest12 {
     public void test06366() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06366");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -9588,7 +9588,7 @@ public class RegressionTest12 {
     public void test06367() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06367");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -9613,7 +9613,7 @@ public class RegressionTest12 {
     public void test06368() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06368");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -9652,7 +9652,7 @@ public class RegressionTest12 {
     public void test06369() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06369");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -9671,7 +9671,7 @@ public class RegressionTest12 {
     public void test06370() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06370");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -9698,7 +9698,7 @@ public class RegressionTest12 {
     public void test06371() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06371");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) ' ');
@@ -9717,7 +9717,7 @@ public class RegressionTest12 {
     public void test06372() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06372");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -9758,7 +9758,7 @@ public class RegressionTest12 {
     public void test06373() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06373");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -9791,7 +9791,7 @@ public class RegressionTest12 {
     public void test06374() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06374");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -9824,7 +9824,7 @@ public class RegressionTest12 {
     public void test06375() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06375");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -9861,7 +9861,7 @@ public class RegressionTest12 {
     public void test06376() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06376");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 1);
@@ -9884,7 +9884,7 @@ public class RegressionTest12 {
     public void test06377() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06377");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -9923,7 +9923,7 @@ public class RegressionTest12 {
     public void test06378() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06378");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -9962,7 +9962,7 @@ public class RegressionTest12 {
     public void test06379() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06379");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -9993,7 +9993,7 @@ public class RegressionTest12 {
     public void test06380() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06380");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10);
@@ -10016,7 +10016,7 @@ public class RegressionTest12 {
     public void test06381() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06381");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) (byte) -1);
@@ -10035,7 +10035,7 @@ public class RegressionTest12 {
     public void test06382() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06382");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 1);
@@ -10058,7 +10058,7 @@ public class RegressionTest12 {
     public void test06383() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06383");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -10075,7 +10075,7 @@ public class RegressionTest12 {
     public void test06384() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06384");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -10098,7 +10098,7 @@ public class RegressionTest12 {
     public void test06385() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06385");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -10137,7 +10137,7 @@ public class RegressionTest12 {
     public void test06386() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06386");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (-1));
@@ -10160,7 +10160,7 @@ public class RegressionTest12 {
     public void test06387() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06387");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -10185,7 +10185,7 @@ public class RegressionTest12 {
     public void test06388() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06388");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) '#');
@@ -10212,7 +10212,7 @@ public class RegressionTest12 {
     public void test06389() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06389");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -10231,7 +10231,7 @@ public class RegressionTest12 {
     public void test06390() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06390");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -10252,7 +10252,7 @@ public class RegressionTest12 {
     public void test06391() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06391");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -10277,7 +10277,7 @@ public class RegressionTest12 {
     public void test06392() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06392");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100L);
         java.lang.String str6 = grantPayment0.processPayment((double) (-1L));
@@ -10304,7 +10304,7 @@ public class RegressionTest12 {
     public void test06393() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06393");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -10343,7 +10343,7 @@ public class RegressionTest12 {
     public void test06394() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06394");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -10366,7 +10366,7 @@ public class RegressionTest12 {
     public void test06395() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06395");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1L));
@@ -10387,7 +10387,7 @@ public class RegressionTest12 {
     public void test06396() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06396");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -10430,7 +10430,7 @@ public class RegressionTest12 {
     public void test06397() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06397");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -10459,7 +10459,7 @@ public class RegressionTest12 {
     public void test06398() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06398");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -10498,7 +10498,7 @@ public class RegressionTest12 {
     public void test06399() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06399");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -10533,7 +10533,7 @@ public class RegressionTest12 {
     public void test06400() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06400");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) '4');
@@ -10558,7 +10558,7 @@ public class RegressionTest12 {
     public void test06401() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06401");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -10599,7 +10599,7 @@ public class RegressionTest12 {
     public void test06402() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06402");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -10630,7 +10630,7 @@ public class RegressionTest12 {
     public void test06403() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06403");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -10673,7 +10673,7 @@ public class RegressionTest12 {
     public void test06404() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06404");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -10712,7 +10712,7 @@ public class RegressionTest12 {
     public void test06405() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06405");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 1);
@@ -10741,7 +10741,7 @@ public class RegressionTest12 {
     public void test06406() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06406");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 100L);
@@ -10760,7 +10760,7 @@ public class RegressionTest12 {
     public void test06407() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06407");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment(100.0d);
@@ -10785,7 +10785,7 @@ public class RegressionTest12 {
     public void test06408() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06408");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment(20.0d);
@@ -10812,7 +10812,7 @@ public class RegressionTest12 {
     public void test06409() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06409");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) 10);
@@ -10835,7 +10835,7 @@ public class RegressionTest12 {
     public void test06410() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06410");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -10858,7 +10858,7 @@ public class RegressionTest12 {
     public void test06411() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06411");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10);
@@ -10881,7 +10881,7 @@ public class RegressionTest12 {
     public void test06412() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06412");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -10906,7 +10906,7 @@ public class RegressionTest12 {
     public void test06413() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06413");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -10957,7 +10957,7 @@ public class RegressionTest12 {
     public void test06414() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06414");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100.0f);
@@ -10976,7 +10976,7 @@ public class RegressionTest12 {
     public void test06415() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06415");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -10995,7 +10995,7 @@ public class RegressionTest12 {
     public void test06416() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06416");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -11030,7 +11030,7 @@ public class RegressionTest12 {
     public void test06417() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06417");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -11045,7 +11045,7 @@ public class RegressionTest12 {
     public void test06418() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06418");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -11072,7 +11072,7 @@ public class RegressionTest12 {
     public void test06419() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06419");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1L);
@@ -11093,7 +11093,7 @@ public class RegressionTest12 {
     public void test06420() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06420");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -11122,7 +11122,7 @@ public class RegressionTest12 {
     public void test06421() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06421");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) 10L);
         java.lang.String str6 = debitCardPayment0.processPayment(1.0d);
@@ -11151,7 +11151,7 @@ public class RegressionTest12 {
     public void test06422() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06422");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -11172,7 +11172,7 @@ public class RegressionTest12 {
     public void test06423() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06423");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -11203,7 +11203,7 @@ public class RegressionTest12 {
     public void test06424() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06424");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -11224,7 +11224,7 @@ public class RegressionTest12 {
     public void test06425() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06425");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100L);
@@ -11245,7 +11245,7 @@ public class RegressionTest12 {
     public void test06426() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06426");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100L);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 1.0f);
@@ -11268,7 +11268,7 @@ public class RegressionTest12 {
     public void test06427() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06427");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -11293,7 +11293,7 @@ public class RegressionTest12 {
     public void test06428() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06428");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1);
@@ -11314,7 +11314,7 @@ public class RegressionTest12 {
     public void test06429() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06429");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -11359,7 +11359,7 @@ public class RegressionTest12 {
     public void test06430() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06430");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1.0f));
@@ -11384,7 +11384,7 @@ public class RegressionTest12 {
     public void test06431() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06431");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -11429,7 +11429,7 @@ public class RegressionTest12 {
     public void test06432() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06432");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment(10.0d);
@@ -11452,7 +11452,7 @@ public class RegressionTest12 {
     public void test06433() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06433");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -11481,7 +11481,7 @@ public class RegressionTest12 {
     public void test06434() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06434");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -11512,7 +11512,7 @@ public class RegressionTest12 {
     public void test06435() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06435");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -11537,7 +11537,7 @@ public class RegressionTest12 {
     public void test06436() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06436");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (-1));
@@ -11558,7 +11558,7 @@ public class RegressionTest12 {
     public void test06437() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06437");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -11581,7 +11581,7 @@ public class RegressionTest12 {
     public void test06438() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06438");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -11606,7 +11606,7 @@ public class RegressionTest12 {
     public void test06439() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06439");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) -1);
@@ -11625,7 +11625,7 @@ public class RegressionTest12 {
     public void test06440() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06440");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -11646,7 +11646,7 @@ public class RegressionTest12 {
     public void test06441() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06441");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -11671,7 +11671,7 @@ public class RegressionTest12 {
     public void test06442() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06442");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -11698,7 +11698,7 @@ public class RegressionTest12 {
     public void test06443() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06443");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(1.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 0);
@@ -11715,7 +11715,7 @@ public class RegressionTest12 {
     public void test06444() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06444");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) -1);
@@ -11730,7 +11730,7 @@ public class RegressionTest12 {
     public void test06445() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06445");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (-1));
@@ -11755,7 +11755,7 @@ public class RegressionTest12 {
     public void test06446() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06446");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(0.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -11774,7 +11774,7 @@ public class RegressionTest12 {
     public void test06447() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06447");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) 10);
@@ -11799,7 +11799,7 @@ public class RegressionTest12 {
     public void test06448() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06448");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1L));
@@ -11822,7 +11822,7 @@ public class RegressionTest12 {
     public void test06449() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06449");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -11845,7 +11845,7 @@ public class RegressionTest12 {
     public void test06450() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06450");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 100L);
@@ -11872,7 +11872,7 @@ public class RegressionTest12 {
     public void test06451() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06451");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -11909,7 +11909,7 @@ public class RegressionTest12 {
     public void test06452() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06452");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) 100);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -11928,7 +11928,7 @@ public class RegressionTest12 {
     public void test06453() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06453");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100);
@@ -11949,7 +11949,7 @@ public class RegressionTest12 {
     public void test06454() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06454");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (short) -1);
@@ -11968,7 +11968,7 @@ public class RegressionTest12 {
     public void test06455() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06455");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -11997,7 +11997,7 @@ public class RegressionTest12 {
     public void test06456() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06456");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (-1));
         java.lang.String str4 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 10);
@@ -12022,7 +12022,7 @@ public class RegressionTest12 {
     public void test06457() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06457");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 100);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -12051,7 +12051,7 @@ public class RegressionTest12 {
     public void test06458() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06458");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 10.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (-1));
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1L);
@@ -12070,7 +12070,7 @@ public class RegressionTest12 {
     public void test06459() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06459");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 10);
@@ -12095,7 +12095,7 @@ public class RegressionTest12 {
     public void test06460() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06460");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -12122,7 +12122,7 @@ public class RegressionTest12 {
     public void test06461() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06461");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -12163,7 +12163,7 @@ public class RegressionTest12 {
     public void test06462() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06462");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -12200,7 +12200,7 @@ public class RegressionTest12 {
     public void test06463() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06463");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment(100.0d);
@@ -12223,7 +12223,7 @@ public class RegressionTest12 {
     public void test06464() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06464");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment(30.0d);
@@ -12244,7 +12244,7 @@ public class RegressionTest12 {
     public void test06465() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06465");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 100);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0);
@@ -12277,7 +12277,7 @@ public class RegressionTest12 {
     public void test06466() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06466");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 10);
@@ -12298,7 +12298,7 @@ public class RegressionTest12 {
     public void test06467() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06467");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((-1.0d));
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 0.0f);
@@ -12325,7 +12325,7 @@ public class RegressionTest12 {
     public void test06468() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06468");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1L));
@@ -12352,7 +12352,7 @@ public class RegressionTest12 {
     public void test06469() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06469");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -12381,7 +12381,7 @@ public class RegressionTest12 {
     public void test06470() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06470");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -12428,7 +12428,7 @@ public class RegressionTest12 {
     public void test06471() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06471");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) 1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 0);
@@ -12451,7 +12451,7 @@ public class RegressionTest12 {
     public void test06472() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06472");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(20.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) ' ');
@@ -12472,7 +12472,7 @@ public class RegressionTest12 {
     public void test06473() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06473");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) (short) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) (-1L));
@@ -12497,7 +12497,7 @@ public class RegressionTest12 {
     public void test06474() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06474");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (byte) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) 1);
@@ -12514,7 +12514,7 @@ public class RegressionTest12 {
     public void test06475() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06475");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -12533,7 +12533,7 @@ public class RegressionTest12 {
     public void test06476() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06476");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 100);
@@ -12554,7 +12554,7 @@ public class RegressionTest12 {
     public void test06477() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06477");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -12577,7 +12577,7 @@ public class RegressionTest12 {
     public void test06478() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06478");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) '4');
         java.lang.String str4 = institutionalPayment0.processPayment(1.0d);
         java.lang.String str6 = institutionalPayment0.processPayment((double) (short) 0);
@@ -12592,7 +12592,7 @@ public class RegressionTest12 {
     public void test06479() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06479");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10L);
@@ -12619,7 +12619,7 @@ public class RegressionTest12 {
     public void test06480() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06480");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 100.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 1);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 10.0f);
@@ -12642,7 +12642,7 @@ public class RegressionTest12 {
     public void test06481() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06481");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) ' ');
         java.lang.String str6 = creditCardPayment0.processPayment((double) 10.0f);
@@ -12671,7 +12671,7 @@ public class RegressionTest12 {
     public void test06482() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06482");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) 1.0f);
         java.lang.String str6 = creditCardPayment0.processPayment((double) 100.0f);
@@ -12696,7 +12696,7 @@ public class RegressionTest12 {
     public void test06483() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06483");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment((double) (short) 0);
         java.lang.String str6 = creditCardPayment0.processPayment((-1.0d));
@@ -12725,7 +12725,7 @@ public class RegressionTest12 {
     public void test06484() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06484");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment((double) (short) 100);
@@ -12744,7 +12744,7 @@ public class RegressionTest12 {
     public void test06485() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06485");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) '4');
         java.lang.String str6 = grantPayment0.processPayment((double) (short) 1);
@@ -12773,7 +12773,7 @@ public class RegressionTest12 {
     public void test06486() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06486");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str4 = creditCardPayment0.processPayment(0.0d);
         java.lang.String str6 = creditCardPayment0.processPayment(20.0d);
@@ -12792,7 +12792,7 @@ public class RegressionTest12 {
     public void test06487() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06487");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment(10.0d);
         java.lang.String str6 = grantPayment0.processPayment((double) (byte) -1);
@@ -12819,7 +12819,7 @@ public class RegressionTest12 {
     public void test06488() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06488");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -12856,7 +12856,7 @@ public class RegressionTest12 {
     public void test06489() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06489");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -12895,7 +12895,7 @@ public class RegressionTest12 {
     public void test06490() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06490");
-        src.java.FacultyPricing facultyPricing0 = new src.java.FacultyPricing();
+        app.FacultyPricing facultyPricing0 = new app.FacultyPricing();
         double double1 = facultyPricing0.calculateRate();
         double double2 = facultyPricing0.calculateRate();
         double double3 = facultyPricing0.calculateRate();
@@ -12918,7 +12918,7 @@ public class RegressionTest12 {
     public void test06491() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06491");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) (short) -1);
         java.lang.String str6 = institutionalPayment0.processPayment((double) ' ');
@@ -12933,7 +12933,7 @@ public class RegressionTest12 {
     public void test06492() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06492");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -12976,7 +12976,7 @@ public class RegressionTest12 {
     public void test06493() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06493");
-        src.java.DebitCardPayment debitCardPayment0 = new src.java.DebitCardPayment();
+        app.DebitCardPayment debitCardPayment0 = new app.DebitCardPayment();
         java.lang.String str2 = debitCardPayment0.processPayment((double) 1.0f);
         java.lang.String str4 = debitCardPayment0.processPayment((double) 0.0f);
         java.lang.String str6 = debitCardPayment0.processPayment((double) 1.0f);
@@ -12995,7 +12995,7 @@ public class RegressionTest12 {
     public void test06494() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06494");
-        src.java.StudentPricing studentPricing0 = new src.java.StudentPricing();
+        app.StudentPricing studentPricing0 = new app.StudentPricing();
         double double1 = studentPricing0.calculateRate();
         double double2 = studentPricing0.calculateRate();
         double double3 = studentPricing0.calculateRate();
@@ -13034,7 +13034,7 @@ public class RegressionTest12 {
     public void test06495() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06495");
-        src.java.GuestPricing guestPricing0 = new src.java.GuestPricing();
+        app.GuestPricing guestPricing0 = new app.GuestPricing();
         double double1 = guestPricing0.calculateRate();
         double double2 = guestPricing0.calculateRate();
         double double3 = guestPricing0.calculateRate();
@@ -13069,7 +13069,7 @@ public class RegressionTest12 {
     public void test06496() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06496");
-        src.java.CreditCardPayment creditCardPayment0 = new src.java.CreditCardPayment();
+        app.CreditCardPayment creditCardPayment0 = new app.CreditCardPayment();
         java.lang.String str2 = creditCardPayment0.processPayment((double) 100);
         java.lang.String str4 = creditCardPayment0.processPayment((double) '4');
         java.lang.String str6 = creditCardPayment0.processPayment((double) (-1L));
@@ -13094,7 +13094,7 @@ public class RegressionTest12 {
     public void test06497() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06497");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
@@ -13141,7 +13141,7 @@ public class RegressionTest12 {
     public void test06498() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06498");
-        src.java.InstitutionalPayment institutionalPayment0 = new src.java.InstitutionalPayment();
+        app.InstitutionalPayment institutionalPayment0 = new app.InstitutionalPayment();
         java.lang.String str2 = institutionalPayment0.processPayment((double) 0L);
         java.lang.String str4 = institutionalPayment0.processPayment((double) ' ');
         java.lang.String str6 = institutionalPayment0.processPayment((double) (byte) 1);
@@ -13166,7 +13166,7 @@ public class RegressionTest12 {
     public void test06499() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06499");
-        src.java.GrantPayment grantPayment0 = new src.java.GrantPayment();
+        app.GrantPayment grantPayment0 = new app.GrantPayment();
         java.lang.String str2 = grantPayment0.processPayment(0.0d);
         java.lang.String str4 = grantPayment0.processPayment((double) (byte) 0);
         java.lang.String str6 = grantPayment0.processPayment((double) 100.0f);
@@ -13187,7 +13187,7 @@ public class RegressionTest12 {
     public void test06500() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest12.test06500");
-        src.java.ResearcherPricing researcherPricing0 = new src.java.ResearcherPricing();
+        app.ResearcherPricing researcherPricing0 = new app.ResearcherPricing();
         double double1 = researcherPricing0.calculateRate();
         double double2 = researcherPricing0.calculateRate();
         double double3 = researcherPricing0.calculateRate();
